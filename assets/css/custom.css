@@ -838,9 +838,9 @@ dl {
 .btn-default:focus,
 .btn-default:active:focus {
 	background: #00f0d1;
-	background: -webkit-linear-gradient(51deg, #00f0d1, #a966ee);
-	background: -ms-linear-gradient(51deg, #00f0d1, #a966ee);
-	background: linear-gradient(51deg, #00f0d1, #a966ee);
+	background: -webkit-linear-gradient(90deg, #ff3c3c, #8102ab);
+	background: -ms-linear-gradient(90deg, #ff3c3c, #8102ab);
+	background: linear-gradient(90deg, #ff3c3c, #8102ab);
 	color: #fff;
 }
 
@@ -1322,11 +1322,13 @@ dl {
 .panel-title a:hover,
 .panel-title a[aria-expanded="true"] {
 	background: #00f0d1;
-	background: -webkit-linear-gradient(51deg, #00f0d1, #a966ee);
-	background: -ms-linear-gradient(51deg, #00f0d1, #a966ee);
-	background: linear-gradient(51deg, #00f0d1, #a966ee);
+	background: -webkit-linear-gradient(90deg, #ff3c3c, #8102ab);
+	background: -ms-linear-gradient(90deg, #ff3c3c, #8102ab);
+	background: linear-gradient(90deg, #ff3c3c, #8102ab);
 	color: #fff;
 }
+
+
 
 .panel-title a:hover:after,
 .panel-title a[aria-expanded="true"]:after {
@@ -2779,9 +2781,9 @@ dl {
 
 .counter:hover i {
 	color: #00f0d1;
-	background: -webkit-linear-gradient(51deg, #00f0d1, #a966ee);
-	background: -ms-linear-gradient(51deg, #00f0d1, #a966ee);
-	background: linear-gradient(51deg, #00f0d1, #a966ee);
+	background: -webkit-linear-gradient(90deg, #ff3c3c, #8102ab);
+	background: -ms-linear-gradient(90deg, #ff3c3c, #8102ab);
+	background: linear-gradient(90deg, #ff3c3c, #8102ab);
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -3469,7 +3471,7 @@ blockquote footer img {
 	background-size: 100% 2px;
 	background-position: 0 0, 0 100%;
 	background-repeat: no-repeat;
-	background-image: linear-gradient(51deg, #00f0d1, #a966ee), linear-gradient(51deg, #00f0d1, #a966ee);
+	background-image: linear-gradient(90deg, #ff3c3c, #8102ab), linear-gradient(90deg, #ff3c3c, #8102ab);
 }
 
 /***********************************************************************************
@@ -3677,9 +3679,9 @@ blockquote footer img {
 	margin-top: 50px;
 	margin-bottom: 0;
 	background: #00f0d1;
-	background: -webkit-linear-gradient(90deg, #91f9eb, #dabdf8);
-	background: -ms-linear-gradient(90deg, #91f9eb, #dabdf8);
-	background: linear-gradient(90deg, #91f9eb, #dabdf8);
+	background: -webkit-linear-gradient(90deg, #fff, #fff);
+	background: -ms-linear-gradient(90deg, #fff, #fff);
+	background: linear-gradient(90deg, #fff, #fff);
 }
 
 #section-5 {

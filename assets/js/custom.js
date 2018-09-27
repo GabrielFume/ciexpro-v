@@ -106,7 +106,7 @@
                         class: ""
                 }).insertAfter("header");
 
-                $("#header-sticky #logo img").attr("src", "assets/images/redd.png");
+                $("#header-sticky #logo img").attr("src", "assets/images/logo_ciexpro.png");
 
                 $(window).scroll(function(){
 
