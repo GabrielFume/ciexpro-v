@@ -845,9 +845,9 @@ dl {
 }
 
 .btn-default.btn-outline:after {
-	border-left: 2px solid #00f0d1;
-	border-right: 2px solid #a966ee;
-	background-image: linear-gradient(90deg, #00f0d1, #a966ee), linear-gradient(90deg, #00f0d1, #a966ee);
+	border-left: 2px solid #94d60a;
+	border-right: 2px solid #8b169c;
+	background-image: linear-gradient(90deg, #94d60a, #8b169c), linear-gradient(90deg, #94d60a, #a966ee);
 }
 
 /* PRIMARY */
