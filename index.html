@@ -65,6 +65,63 @@
 	<link rel="stylesheet" href="assets/css/custom.css">
 	<link rel="stylesheet" href="assets/css/pages-style.css">
 	<link rel="stylesheet" href="assets/css/para.scss">
+
+	<style>
+
+	.company-container{
+		    position: relative;
+	}
+
+	.cc{
+		    position: relative;
+	}
+
+	.cs{
+		    position: relative;
+	}
+
+	.company-container::after {
+    content: " ";
+    width: 100%;
+    height: 3.75rem;
+    right: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(assets/images/04.svg) no-repeat scroll 50% 0 transparent;
+    background-size: 105% auto;
+    z-index: 3;
+	}
+
+	.cc::before {
+    content: " ";
+    width: 100%;
+    height: 4.25rem;
+    right: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(assets/images/03.svg) no-repeat scroll 50% 100% transparent;
+    background-size: 105% auto;
+    z-index: 3;
+}
+
+.cs::after {
+    content: " ";
+    width: 100%;
+    height: 4.25rem;
+    right: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(assets/images/04.svg) no-repeat scroll 50% 100% transparent;
+    background-size: 105% auto;
+    z-index: 3;
+}
+	</style>
 	
 
 </head>
@@ -83,7 +140,7 @@
 						<!-- LOGO -->
 						<div id="logo">
 							<a href="index.html">
-								<img src="assets/images/logo_ciexpro.png" alt="">
+								<!-- <img src="assets/images/logo_ciexpro.png" alt=""> -->
 							</a>
 						</div><!-- LOGO -->
 						
@@ -129,19 +186,21 @@
 		</header><!-- HEADER -->
 
 		
-		
-		<div class="">
+		<section>
+			<div class="">
 				<div class="" data-version="5.0" >
 					<div style="/*filter: brightness(55%);*/">
-						<img src="assets/images/Parallax_Ciexpro_sin_logo.jpg" alt="" >
+						<img src="assets/images/Parallax_Ciexpro_con_texto (1).png" alt="" >
 					</div>
 				</div><!-- rev_slider -->
-		</div><!-- rev_slider_wrapper -->
+			</div><!-- rev_slider_wrapper -->
+		</section>
+		
 
 	
 
 			<!-- Button trigger modal -->
-<section style="padding: 0% 0% 8% 0%;">
+<section class="company-container" style="padding: 0% 0% 8% 0%; background: linear-gradient(to top,#0082cb,#fff)">
 	
 			<div class="container" id="next-section">
 				<div class="row">
@@ -162,7 +221,7 @@
 				<div class="row">
 					<div class="col-lg-4 col-md-12 col-sm-12">
 
-						<div class="about-me">
+						<div class="about-me text-box rounded large ">
 
 							<div class="about-me-thumbnail">
 
@@ -174,18 +233,18 @@
 
 							</div><!-- about-me-thumbnail -->
 
-							<h6>E-Bootcamp</h6>
-							<!-- <span>Team Leader</span> -->
+							<h6>eMaster</h6>
+							<!-- <span>Manager</span> -->
 
-							<p>Programas cortos, introductorios se hace alusión a la Práctica, entrenamiento, aprender 
-							haciendo.</p>
+							<p>Programas de 1 a 3 meses, especializados se hace alusión a habilidades específica, 
+							desarrollarse en lo que más te gusta.</p>
 
 						</div><!-- about-me -->
 
 					</div><!-- col -->
 					<div class="col-lg-4 col-md-12 col-sm-12">
 
-						<div class="about-me">
+						<div class="about-me"> 
 
 							<div class="about-me-thumbnail">
 
@@ -197,18 +256,18 @@
 
 							</div><!-- about-me-thumbnail -->
 
-							<h6>E-MicroMaster</h6>
-							<!-- <span>Manager</span> -->
+							<h6 style="color:#fff; font-size: 25px; margin-top: -50px;">eBootcam</h6>
+							<!-- <span>Team Leader</span> -->
 
-							<p>Programas de 1 a 3 meses, especializados se hace alusión a habilidades específica, 
-							desarrollarse en lo que más te gusta.</p>
+							<p style="color:#fff; font-size: 16px; padding-top: 5%;">Programas cortos, introductorios se hace alusión a la Práctica, entrenamiento, aprender 
+							haciendo.</p>
 
 						</div><!-- about-me -->
 
 					</div><!-- col -->
 					<div class="col-lg-4 col-md-12 col-sm-12">
 
-						<div class="about-me">
+						<div class="about-me text-box rounded large ">
 
 							<div class="about-me-thumbnail ">
 
@@ -220,7 +279,7 @@
 
 							</div><!-- about-me-thumbnail -->
 
-							<h6>E-Master</h6>
+							<h6>eMicroMaster</h6>
 							<!-- <span>Designer</span> -->
 
 							<p>Programas de +4 meses, maestrías se hace alusión a obtener conocimiento de varios 
@@ -242,7 +301,7 @@
 
 			
 
-		<section style="background-image: url(assets/images/Fondo_experto.png); background-repeat: no-repeat;">
+		<section class="" style="background-image: url(assets/images/Fondo_experto.png); background-repeat: no-repeat;" >
 			<div class="container" id="next-section">
 				<div class="row">
 					<div class="col-sm-12 col-md-12 col-lg-12">
@@ -257,8 +316,6 @@
 					</div><!-- col -->
 				</div><!-- row -->
 			</div><!-- container -->
-
-
 
 			<div class="container">
 				<div class="row">
@@ -330,19 +387,15 @@
 			</div><!-- container -->
 		</section>
 
-		<section class="container" style="padding: 8% 0% 15% 0%">
-
+		<section class="cs" style="padding: 8% 0% 15% 0%; background-color: #f1f1f1;">
+			<div class="container">
 				<div class="container" id="next-section">
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12">
-
 							<div class="headline text-center">
-
 								<!-- <h6>Servicios</h6> -->
-								<h1>Desarrolla tus habilidades.</h1>
-
+								<h1>Desarrolla tus habilidades</h1>
 							</div><!-- headline -->
-
 						</div><!-- col -->
 					</div><!-- row -->
 				</div><!-- container -->
@@ -350,62 +403,67 @@
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12">
 						<div class="row">
-							<div class="col-md-4 cont">
+							<div class="col-md-4 cont" style="border-top: 3px solid #0074c3; border-left: 3px solid #0074c3;">
 								<div class="item">
-									<img src="assets/icons/Icono_Comunicaciones-02.png" alt="" width="60" height="60">
+									<img src="assets/icons/Icono_Comunicaciones-02.png" alt="" width="170" height="170">
 								</div>
 								<div class="item-2">
-									<h4>Titulo</h4>
-									<p>Lorem ipsum dolor sit ammet consectetur adipiscing elit</p>
+									<h4 style="font-size: 20px;">Comunicaciones</h4>
+									<p style="font-size: 14px;">Domina habilidades comunicacionales basadas en el respeto y la armonía necesaria para transmitir pensamientos, opiniones, trabajar o liderar equipos.</p>
 								</div>
 							</div>
-							<div class="col-md-4 cont">
+							<div class="col-md-4 cont" style="border-top: 3px solid #0074c3;  border-left: 3px solid #0074c3;">
 								<div class="item">
-									<img src="assets/icons/Icono_Manejo_computacional-02.png" alt="" width="120" height="120">
+									<img src="assets/icons/Icono_Manejo_computacional-02.png" alt="" width="280" height="280">
 								</div>
 								<div class="item-2">
-									<h4>Titulo</h4>
-									<p>Lorem ipsum dolor sit ammet consectetur adipiscing elit</p></div>
+									<h4 style="font-size: 20px;">Pensamiento computacional</h4>
+									<p style="font-size: 14px;">Desarrolla competencias en la era digital para crear nuevas ideas y obtener soluciones originales a los obstáculos que se te presenten.</p>
+								</div>
 							</div>
-							<div class="col-md-4 cont">
+							<div class="col-md-4 cont" style="border-top: 3px solid #0074c3; border-left: 3px solid #0074c3; border-right: 3px solid #0074c3;"">
 								<div class="item">
-									<img src="assets/icons/Icono_Liderazgo-02.png" alt="" width="150" height="150">
+									<img src="assets/icons/Icono_Liderazgo-02.png" alt="" width="200" height="200">
 								</div>
 								<div class="item-2">
-									<h4>Titulo</h4>
-									<p>Lorem ipsum dolor sit ammet consectetur adipiscing elit</p></div>
+									<h4 style="font-size: 20px;">Liderazgo auténtico</h4>
+									<p style="font-size: 14px;">Potencia tus habilidades para liderar equipos de forma integral y alcanzar la cima</p>
+								</div>
 							</div>
-							<div class="col-md-4 cont">
+							<div class="col-md-4 cont" style="border-top: 3px solid #0074c3; border-left: 3px solid #0074c3; border-bottom: 3px solid #0074c3;">
 								<div class="item">
-									<img src="assets/icons/Icono_Manejo_emocional-02.png" alt="" width="180" height="180">
+									<img src="assets/icons/Icono_Manejo_emocional-02.png" alt="" width="300" height="300">
 								</div>
 								<div class="item-2">
-									<h4>Titulo</h4>
-									<p>Lorem ipsum dolor sit ammet consectetur adipiscing elit</p></div>
+									<h4 style="font-size: 20px;">Manejo emocional</h4>
+									<p style="font-size: 14px;">Reconoce tus emociones y las de los demás para aprender a manejarlas y aprovechar su impulso que te lleve a la meta.</p>
+								</div>
 							</div>
-							<div class="col-md-4 cont">
+							<div class="col-md-4 cont" style="border-top: 3px solid #0074c3; border-left: 3px solid #0074c3; border-bottom: 3px solid #0074c3;">
 								<div class="item">
-									<img src="assets/icons/Icono_Finanzas-02.png" alt="" width="70" height="70">
+									<img src="assets/icons/Icono_Finanzas-02.png" alt="" width="130" height="130">
 								</div>
 								<div class="item-2">
-									<h4>Titulo</h4>
-									<p>Lorem ipsum dolor sit ammet consectetur adipiscing elit</p></div>
+									<h4 style="font-size: 20px;">Finanzas Digitales</h4>
+									<p style="font-size: 14px;">Adquiere herramientas para comprender la transformación y la evolución del dinero en la era digital.</p></div>
 							</div>
-							<div class="col-md-4 cont">
+							<div class="col-md-4 cont" style="border-top: 3px solid #0074c3; border-left: 3px solid #0074c3; border-bottom: 3px solid #0074c3; border-right: 3px solid #0074c3;">
 								<div class="item">
-									<img src="assets/icons/Icono_Analisis-02.png" alt="" width="150" height="150">
+									<img src="assets/icons/Icono_Analisis-02.png" alt="" width="220" height="220">
 								</div>
 								<div class="item-2">
-									<h4>Titulo</h4>
-									<p>Lorem ipsum dolor sit ammet consectetur adipiscing elit</p></div>
+									<h4 style="font-size: 20px;">Análisis</h4>
+									<p style="font-size: 14px;">Identifica las características de cualquier situación y extrae información para obtener soluciones acertadas y tomar decisiones.</p>
+								</div>
 							</div>
 						</div>
 					</div><!-- col -->
 				</div><!-- row -->
+			</div>
 			</section><!-- container -->
 
-			<section style="background-color: #003f61; padding: 8% 0% 4% 0%;">
-				<div class="container">
+			<section class="company-container cc"  style="background-color: #003f61; padding: 8% 0% 4% 0%;">
+				<div class="container" >
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12">
 
@@ -637,7 +695,7 @@
 
 							<div class="widget widget-pages">
 
-								<h6 class="widget-title">Site Map</h6>
+								<h6 class="widget-title">Mapa</h6>
 
 								<ul>
 									<li><a href="#">Inicio</a></li>
@@ -656,11 +714,11 @@
 
 							<div class="widget widget-contact">
 
-								<h6 class="widget-title">Contact info</h6>
+								<h6 class="widget-title">Informacion de contacto</h6>
 
 								<ul>
-									<li>4124 Barnes Street, Sanford, <br class="d-block d-md-none d-lg-block"> FL 32771</li>
-									<li>203-808-8613</li>
+									<li>Av. Eugenio Mendoza con 2da. Transversal, Torre Multinvest, <br class="d-block d-md-none d-lg-block"> Piso 2, Oficina 2C. La Castellana <br>Caracas – Venezuela.</li>
+									<li>+58 212-2645130</li>
 									<li><a href="mailto:office@milothemes.com">office@milothemes.com</a></li>
 								</ul>
 
@@ -682,7 +740,6 @@
 	
 
 			<div id="footer-bottom">
-
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 order-md-6">
@@ -704,24 +761,15 @@
 						<div class="col-md-6">
 
 							<div class="widget widget-text">
-
 								<div>
-
 									<p class="copyright"><img src="assets/images/logo_ciexpro.png" alt="" style="width: 30%;"> 2018. All Rights Reserved.</p>
-
 								</div>
 								<div>
-
-									
-
 								</div>
-
 							</div><!-- widget-text -->
-
 						</div><!-- col -->
 					</div><!-- row -->
 				</div><!-- container -->
-
 			</div><!-- footer-bottom -->
 			
 		</footer><!-- FOOTER -->
