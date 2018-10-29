@@ -66,64 +66,6 @@
 	<link rel="stylesheet" href="assets/css/pages-style.css">
 	<link rel="stylesheet" href="assets/css/para.scss">
 
-	<style>
-
-	.company-container{
-		    position: relative;
-	}
-
-	.cc{
-		    position: relative;
-	}
-
-	.cs{
-		    position: relative;
-	}
-
-	.company-container::after {
-    content: " ";
-    width: 100%;
-    height: 3.75rem;
-    right: 0;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: url(assets/images/04.svg) no-repeat scroll 50% 0 transparent;
-    background-size: 105% auto;
-    z-index: 3;
-	}
-
-	.cc::before {
-    content: " ";
-    width: 100%;
-    height: 4.25rem;
-    right: 0;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: url(assets/images/03.svg) no-repeat scroll 50% 100% transparent;
-    background-size: 105% auto;
-    z-index: 3;
-}
-
-.cs::after {
-    content: " ";
-    width: 100%;
-    height: 4.25rem;
-    right: 0;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: url(assets/images/04.svg) no-repeat scroll 50% 100% transparent;
-    background-size: 105% auto;
-    z-index: 3;
-}
-	</style>
-	
-
 </head>
 
 <body class="sticky-header header-transparent footer-dark">
@@ -200,7 +142,7 @@
 	
 
 			<!-- Button trigger modal -->
-<section class="company-container" style="padding: 0% 0% 8% 0%; background: linear-gradient(to top,#0082cb,#fff)">
+<section class="company-container" style="padding: 0% 0% 8% 0%; /*background: linear-gradient(to top,#0082cb,#fff*/)">
 	
 			<div class="container" id="next-section">
 				<div class="row">
@@ -244,7 +186,8 @@
 					</div><!-- col -->
 					<div class="col-lg-4 col-md-12 col-sm-12">
 
-						<div class="about-me"> 
+						<div class="about-me text-box rounded large" style="background: linear-gradient(to top,#0082ca,#8a199b);
+    box-shadow: 0 34px 51px 0 rgba(0, 0, 0, 0.39);"> 
 
 							<div class="about-me-thumbnail">
 
@@ -256,10 +199,10 @@
 
 							</div><!-- about-me-thumbnail -->
 
-							<h6 style="color:#fff; font-size: 25px; margin-top: -50px;">eBootcam</h6>
+							<h6 style="color: #fff">eBootcam</h6>
 							<!-- <span>Team Leader</span> -->
 
-							<p style="color:#fff; font-size: 16px; padding-top: 5%;">Programas cortos, introductorios se hace alusión a la Práctica, entrenamiento, aprender 
+							<p style="color: #fff">Programas cortos, introductorios se hace alusión a la Práctica, entrenamiento, aprender 
 							haciendo.</p>
 
 						</div><!-- about-me -->
@@ -319,75 +262,132 @@
 
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-4 col-md-12 col-sm-12">
-						<div class="about-me">
-							<div class="about-me-thumbnail">
+					<div class="col-lg-12 col-md-12">
 
-								<img src="assets/images/Experto_Comunicaciones.png" alt="">
+						<div class="owl-carousel services-slider">
+							<div class="item">
 
-								<div class=""> <!-- about-me-hover -->
-									<a class="fancybox" data-fancybox="about" href="../images/about/team/image-5.jpg"></a>
-								</div><!-- about-me-hover -->
+								<div class="service-box style-8 large">
 
-							</div><!-- about-me-thumbnail -->
+									<i class="decode-icon-customer"></i>
 
-							<!-- <h6>Title</h6>
-							<span>Team Leader</span>
+									<div class="service-box-content guias">
 
-							<p>Suspendisse eget varius lacus. Praesent id sem sem.</p> -->
+										<div class="icon-guia" style="border-right: 2px solid #fff; padding: 20px;">
+											<i class="decode-icon-coding" style="font-size: 50px"></i>
+										</div>
 
-						</div><!-- about-me -->
+										<div class="" style="padding: 5px;">
+											<p>Gabriel Arzola</p>
+											<p style="margin-top: -15px">Especialista en Tecnologia</p>
+										</div>	
 
-					</div><!-- col -->
-					<div class="col-lg-4 col-md-12 col-sm-12">
+									</div><!-- service-box-content -->
 
-						<div class="about-me">
+								</div><!-- service-box -->
 
-							<div class="about-me-thumbnail">
+							</div><!-- item -->
 
-								<img src="assets/images/Experto_Tecnologia.png" alt="">
+							<div class="item">
 
-								<div class=""> <!-- about-me-hover -->
-									<a class="fancybox" data-fancybox="about" href="../images/about/team/image-6.jpg"></a>
-								</div><!-- about-me-hover -->
+								<div class="service-box style-8 large">
 
-							</div><!-- about-me-thumbnail -->
+									<i class="decode-icon-customer"></i>
 
-							<!-- <h6>Title</h6>
-							<span>Manager</span>
+									<div class="service-box-content guias">
 
-							<p>Fusce ultrices enim eget consequat lobortis sit amet</p> -->
+										<div class="icon-guia" style="border-right: 2px solid #fff; padding: 20px;">
+											<i class="decode-icon-coding" style="font-size: 50px"></i>
+										</div>
 
-						</div><!-- about-me -->
+										<div class="" style="padding: 5px;">
+											<p>Gabriel Arzola</p>
+											<p style="margin-top: -15px">Especialista en Tecnologia</p>
+										</div>	
 
-					</div><!-- col -->
-					<div class="col-lg-4 col-md-12 col-sm-12">
+									</div><!-- service-box-content -->
 
-						<div class="about-me">
+								</div><!-- service-box -->
 
-							<div class="about-me-thumbnail">
+							</div><!-- item -->
 
-								<img src="assets/images/Experto_Mercadeo.png" alt="">
+							<div class="item">
 
-								<div class=""> <!-- about-me-hover -->
-									<a class="fancybox" data-fancybox="about" href="../images/about/team/image-7.jpg"></a>
-								</div><!-- about-me-hover -->
+								<div class="service-box style-8 large">
 
-							</div><!-- about-me-thumbnail -->
+									<i class="decode-icon-customer"></i>
 
-							<!-- <h6>Title</h6>
-							<span>Designer</span>
+									<div class="service-box-content guias">
 
-							<p>Suspendisse dapibus, mi bibendum fermentum semper.</p> -->
+										<div class="icon-guia" style="border-right: 2px solid #fff; padding: 20px;">
+											<i class="decode-icon-coding" style="font-size: 50px"></i>
+										</div>
 
-						</div><!-- about-me -->
+										<div class="" style="padding: 5px;">
+											<p>Gabriel Arzola</p>
+											<p style="margin-top: -15px">Especialista en Tecnologia</p>
+										</div>	
+
+									</div><!-- service-box-content -->
+
+								</div><!-- service-box -->
+
+							</div><!-- item -->
+
+							<div class="item">
+
+								<div class="service-box style-8 large">
+
+									<i class="decode-icon-customer"></i>
+
+									<div class="service-box-content guias">
+
+										<div class="icon-guia" style="border-right: 2px solid #fff; padding: 20px;">
+											<i class="decode-icon-coding" style="font-size: 50px"></i>
+										</div>
+
+										<div class="" style="padding: 5px;">
+											<p>Gabriel Arzola</p>
+											<p style="margin-top: -15px">Especialista en Tecnologia</p>
+										</div>	
+
+									</div><!-- service-box-content -->
+
+								</div><!-- service-box -->
+
+							</div><!-- item -->
+
+							<div class="item">
+
+								<div class="service-box style-8 large">
+
+									<i class="decode-icon-customer"></i>
+
+									<div class="service-box-content guias">
+
+										<div class="icon-guia" style="border-right: 2px solid #fff; padding: 20px;">
+											<i class="decode-icon-coding" style="font-size: 50px"></i>
+										</div>
+
+										<div class="" style="padding: 5px;">
+											<p>Gabriel Arzola</p>
+											<p style="margin-top: -15px">Especialista en Tecnologia</p>
+										</div>	
+
+									</div><!-- service-box-content -->
+
+								</div><!-- service-box -->
+
+							</div><!-- item -->
+
+						</div><!-- services-slider -->
 
 					</div><!-- col -->
 				</div><!-- row -->
 			</div><!-- container -->
 		</section>
 
-		<section class="cs" style="padding: 8% 0% 15% 0%; background-color: #f1f1f1;">
+		<section class="" style="padding: 8% 0% 15% 0%; background-color: #f1f1f1;">
 			<div class="container">
 				<div class="container" id="next-section">
 					<div class="row">
@@ -421,7 +421,7 @@
 									<p style="font-size: 14px;">Desarrolla competencias en la era digital para crear nuevas ideas y obtener soluciones originales a los obstáculos que se te presenten.</p>
 								</div>
 							</div>
-							<div class="col-md-4 cont" style="border-top: 3px solid #0074c3; border-left: 3px solid #0074c3; border-right: 3px solid #0074c3;"">
+							<div class="col-md-4 cont" style="border-top: 3px solid #0074c3; border-left: 3px solid #0074c3; border-right: 3px solid #0074c3;">
 								<div class="item">
 									<img src="assets/icons/Icono_Liderazgo-02.png" alt="" width="200" height="200">
 								</div>
@@ -460,64 +460,108 @@
 					</div><!-- col -->
 				</div><!-- row -->
 			</div>
-			</section><!-- container -->
+		</section><!-- container -->
 
-			<section class="company-container cc"  style="background-color: #003f61; padding: 8% 0% 4% 0%;">
-				<div class="container" >
-					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12">
+		<section class="company-container "  style="background-color: #003f61; padding: 8% 0% 4% 0%;">
+			<div class="container" >
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<div class="headline text-center">
+							<h1 style="color:#fff">Base del conocimiento</h1>
+						</div><!-- headline -->
+					</div><!-- col -->
+				</div><!-- row -->
+			</div><!-- container -->
 
-							<div class="headline text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 ml-auto mr-auto">
+						<div class="owl-carousel testimonials-slider style-3">
+							<div class="item">
+								<div class="row">
+									<div class="col-lg-6 col-md-12 col-sm-12" style="border-right: 3px solid white">
+										<div class="">
+											<a href="#"><img src="assets/images/Cerebro_Base-del-conocimiento.png" alt="" width="500" height="500"></a>
+										</div><!-- image-box -->
+									</div><!-- col -->
+									<div class="col-lg-6 col-md-12 col-sm-12">
+										<div class="">
+											<div class="image-box-thumbnail">
+												<a href="#"><img src="assets/images/Base-del-conocimiento.png" alt=""></a>
+											</div><!-- image-box-thumbnail -->
 
-								<h1 style="color:#fff">Base del conocimiento</h1>
+											<!-- <h6>Innovative</h6> -->
+											<!-- <h5><a href="#">Titulo 2</a></h5> -->
 
-							</div><!-- headline -->
+											<p style="font-size: 18px; color: white;">Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio</p>
 
-						</div><!-- col -->
-					</div><!-- row -->
-				</div><!-- container -->
+											<!-- <a class="waves" href="#"><i class="fa fa-angle-down"></i></a> -->
+
+										</div><!-- image-box -->
+									</div><!-- col -->
+								</div><!-- row -->
+							</div><!-- item -->
+							<div class="item">
+								<div class="row">
+									<div class="col-lg-6 col-md-12 col-sm-12" style="border-right: 3px solid white">
+										<div class="">
+											<a href="#"><img src="assets/images/Cerebro_Base-del-conocimiento.png" alt="" width="500" height="500"></a>
+										</div><!-- image-box -->
+									</div><!-- col -->
+									<div class="col-lg-6 col-md-12 col-sm-12">
+										<div class="">
+											<div class="image-box-thumbnail">
+												<a href="#"><img src="assets/images/Base-del-conocimiento.png" alt=""></a>
+											</div><!-- image-box-thumbnail -->
+
+											<!-- <h6>Innovative</h6> -->
+											<!-- <h5><a href="#">Titulo 2</a></h5> -->
+
+											<p style="font-size: 18px; color: white;">Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio</p>
+
+											<!-- <a class="waves" href="#"><i class="fa fa-angle-down"></i></a> -->
+
+										</div><!-- image-box -->
+									</div><!-- col -->
+								</div><!-- row -->
+							</div><!-- item -->
+							<div class="item">
+								<div class="row">
+									<div class="col-lg-6 col-md-12 col-sm-12" style="border-right: 3px solid white">
+										<div class="">
+											<a href="#"><img src="assets/images/Cerebro_Base-del-conocimiento.png" alt="" width="500" height="500"></a>
+										</div><!-- image-box -->
+									</div><!-- col -->
+									<div class="col-lg-6 col-md-12 col-sm-12">
+										<div class="">
+											<div class="image-box-thumbnail">
+												<a href="#"><img src="assets/images/Base-del-conocimiento.png" alt=""></a>
+											</div><!-- image-box-thumbnail -->
+
+											<!-- <h6>Innovative</h6> -->
+											<!-- <h5><a href="#">Titulo 2</a></h5> -->
+
+											<p style="font-size: 18px; color: white;">Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio</p>
+
+											<!-- <a class="waves" href="#"><i class="fa fa-angle-down"></i></a> -->
+
+										</div><!-- image-box -->
+									</div><!-- col -->
+								</div><!-- row -->
+							</div><!-- item -->
+						</div><!-- testimonials-slider -->
+					</div><!-- col -->
+				</div><!-- row -->
 
 				<div class="container">
-					<div class="row">
-						<div class="col-lg-6 col-md-12 col-sm-12" style="border-right: 3px solid white">
-
-							<div class="">
-
-								<a href="#"><img src="assets/images/Cerebro_Base-del-conocimiento.png" alt="" width="500" height="500"></a>
-
-							</div><!-- image-box -->
-
-						</div><!-- col -->
-						<div class="col-lg-6 col-md-12 col-sm-12">
-
-							<div class="">
-
-								<div class="image-box-thumbnail">
-									<a href="#"><img src="assets/images/Base-del-conocimiento.png" alt=""></a>
-								</div><!-- image-box-thumbnail -->
-
-								<!-- <h6>Innovative</h6> -->
-								<!-- <h5><a href="#">Titulo 2</a></h5> -->
-
-								<p style="font-size: 18px; color: white;">Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio</p>
-
-								<!-- <a class="waves" href="#"><i class="fa fa-angle-down"></i></a> -->
-
-							</div><!-- image-box -->
-
-						</div><!-- col -->
-
-					</div><!-- row -->
-
 					<div style="text-align: center; padding: 4%;">
 						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
 						  Ver blog
 						</button>
 					</div>
 				</div><!-- container -->
-			</section>
-
-			
+			</div><!-- container -->
+		</section>			
 
 		<section style="padding:8% 0% 0% 0%;">
 			<div class="container">
@@ -778,26 +822,28 @@
 		
 
 		<!-- Modal -->
-		<div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
 		  <div class="modal-dialog modal-dialog-centered modal-lg" role="document" style="max-width: 800px;
-    margin: 15% auto;">
-		    <div class="modal-content">
+    margin: 8% auto;">
+		    <div class="modal-content" style="background-image: url(assets/images/Fondo_ciexpro_mesa_3.jpg);
+    background-size: cover; ">
 		      <!-- <div class="modal-header">
 		        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 		          <span aria-hidden="true">&times;</span>
 		        </button>
 		      </div> -->
-		      <div class="modal-body">
+		      <div class="modal-body" style="padding: 0px;">
 
 		      	<div class="row">
-		      		<div class="col-md-7">
+		      		<div class="col-md-2"></div>
+		      		<div class="col-md-8">
 
-		      			<div class="container">
-		      				<div class="" style="text-align: center">
-								<h4>EBOOK GRATIS</h4>
-								<p>Solo para susciptores</p>
-						</div>
+		      			<div class="container" style=" height: 100%;">
+		      				<div class="" style="text-align: center; padding-top: 8%;">
+								<h4>UNETE A LA AVENTURA</h4>
+								<p style="color: #0081C6; font-size: 18px">Solicita mas informacion aqui</p>
+							</div>
 
 						<div class="hr default-color"></div>
 
@@ -809,72 +855,73 @@
 								<p>
 									<input class="col-12 required" id="name" type="text" name="FNAME" id="mce-FNAME" required>
 									<span></span>
-									<label for="name">Nombre</label>
+									<label for="name" style="color: #0081C6; font-size: 15px">Nombre</label>
 								</p>
 
 								<p>
 									<input class="col-12 required" id="name" type="text" name="SECNAME" id="mce-SECNAME" required>
 									<span></span>
-									<label for="secuname">Apellido</label>
+									<label for="secuname" style="color: #0081C6; font-size: 15px">Apellido</label>
 								</p>
 
 								<p>
-									<input class="col-12" id="email" type="email" name="EMAIL" id="name" id="mce-EMAIL" required>
+									<input class="col-12" type="text" name="EMAIL" id="name" id="mce-EMAIL" required>
 									<span></span>
-									<label for="email">Correo</label>
+									<label for="email" style="color: #0081C6; font-size: 15px">Correo</label>
 								</p>
 
 								<p>
 									<input class="col-12 required" type="text" name="PHONE" id="name" value="" id="mce-PHONE"">
 									<span></span>
-									<label for="name">Numero Telefonico</label>
+									<label for="name" style="color: #0081C6; font-size: 15px">Numero Telefonico</label>
 								</p>
 
 								<p>
 									<input class="col-12 required" type="text" name="PAIS" id="name" class="required" id="mce-PAIS">
 									<span></span>
-									<label for="name">Pais</label>
+									<label for="name" style="color: #0081C6; font-size: 15px">Pais</label>
 								</p>
 
 								<div style="text-align: center;">
-									<button class="btn btn-default btn-outline waves waves-dark center" id="submit" type="submit" name="submit" value="" >Subscrite<i class="decode-icon-cursor"></i></button>
+									<!-- <button class="btn btn-default btn-outline waves waves-dark center" id="submit" type="submit" name="submit" value="" >Subscrite<i class="decode-icon-cursor"></i></button> -->
+									<button type="submit" id="submit" name="submit" class="btn btn-primary center" data-toggle="modal" data-target="#exampleModalCenter">
+					  					Inicia la aventura
+									</button>
 								</div>
 
 							</fieldset>
 						</form>
 
 						<!-- Begin Mailchimp Signup Form -->
-
-<!-- <div id="mc_embed_signup">
-<form >
-    <div id="mc_embed_signup_scroll">
-	<h2>Subscribe to our mailing list</h2>
-<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-<div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-</label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-</div>
-<div class="mc-field-group">
-	<label for="mce-FNAME">First Name </label>
-	<input type="text" value="" >
-</div>
-	<div id="mce-responses" class="clear">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5e96cdf5db7893b101fb1a3ca_43a2084ad9" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-</form>
-</div> -->
+							<!-- <div id="mc_embed_signup">
+							<form >
+							    <div id="mc_embed_signup_scroll">
+								<h2>Subscribe to our mailing list</h2>
+							<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+							<div class="mc-field-group">
+								<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+							</label>
+								<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+							</div>
+							<div class="mc-field-group">
+								<label for="mce-FNAME">First Name </label>
+								<input type="text" value="" >
+							</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    
+							    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5e96cdf5db7893b101fb1a3ca_43a2084ad9" tabindex="-1" value=""></div>
+							    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+							    </div>
+							</form>
+						</div> -->
 
 		      			</div>
 
 						
 		      		</div>
-		      		<div class="col-md-5" style="background-image: url(https://cdn.mpora.com/featured_image/5ab90a481a658.jpg);
-    background-size: cover; ">
+		      		<div class="col-md-2" >
 		      			
 		      		</div>
 		      	</div>
@@ -973,35 +1020,16 @@
 	<!-- CUSTOM JS -->
 	<script src="assets/js/custom.js"></script>
 
-	<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text'; /*
-		 * Translated default messages for the $ validation plugin.
-		 * Locale: ES
-		 */
-		$.extend($.validator.messages, {
-		  required: "Este campo es obligatorio.",
-		  remote: "Por favor, rellena este campo.",
-		  email: "Por favor, escribe una dirección de correo válida",
-		  url: "Por favor, escribe una URL válida.",
-		  date: "Por favor, escribe una fecha válida.",
-		  dateISO: "Por favor, escribe una fecha (ISO) válida.",
-		  number: "Por favor, escribe un número entero válido.",
-		  digits: "Por favor, escribe sólo dígitos.",
-		  creditcard: "Por favor, escribe un número de tarjeta válido.",
-		  equalTo: "Por favor, escribe el mismo valor de nuevo.",
-		  accept: "Por favor, escribe un valor con una extensión aceptada.",
-		  maxlength: $.validator.format("Por favor, no escribas más de {0} caracteres."),
-		  minlength: $.validator.format("Por favor, no escribas menos de {0} caracteres."),
-		  rangelength: $.validator.format("Por favor, escribe un valor entre {0} y {1} caracteres."),
-		  range: $.validator.format("Por favor, escribe un valor entre {0} y {1}."),
-		  max: $.validator.format("Por favor, escribe un valor menor o igual a {0}."),
-		  min: $.validator.format("Por favor, escribe un valor mayor o igual a {0}.")
-		});}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+	<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'>
+		
+	</script>
+
 		<!--End mc_embed_signup-->
 
 	<script>
 		$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
+  			$('#myInput').trigger('focus')
+		})
 	</script>
 	
 </body>

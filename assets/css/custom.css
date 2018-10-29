@@ -6128,3 +6128,113 @@ blockquote footer img {
 .full-section.dark-section .widget-recent-comments ul li a:hover {
 	color: #8b169c;
 }
+
+
+.company-container{
+	position: relative;
+}
+
+.cc{
+	position: relative;
+}
+
+.cs{
+	position: relative;
+}
+
+.cd{
+	position: relative;
+}
+
+.company-container::after {
+    content: " ";
+    width: 100%;
+    height: 3.75rem;
+    right: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(../images/Silueta_montain_blanco.svg) no-repeat scroll 50% 0 transparent;
+    background-size: 105% auto;
+    z-index: 3;
+}
+
+.cc::before {
+    content: " ";
+    width: 100%;
+    height: 4.25rem;
+    right: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/Silueta_montain_azul_conocimiento.svg) no-repeat scroll 50% 100% transparent;
+    background-size: 105% auto;
+    z-index: 3;
+}
+
+.cs::after {
+	content: " ";
+	width: 100%;
+	height: 4.25rem;
+	right: 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/Silueta_montain_gris.svg) no-repeat scroll 50% 100% transparent;
+	background-size: 105% auto;
+	z-index: 3;
+}
+
+.cd::before {
+	content: " ";
+	width: 100%;
+	height: 4.25rem;
+	right: 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/Silueta_montain_gris.svg) no-repeat scroll 50% 100% transparent;
+	background-size: 105% auto;
+	z-index: 3;
+}
+
+.su-3::before {
+	content: " ";
+	width: 100%;
+	height: 4.25rem;
+	right: 0;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/Silueta_montain_azul_conocimiento.svg) no-repeat scroll 50% 100% transparent;
+	background-size: 105% auto;
+	z-index: 3;
+}
+
+.in-3::after {
+    content: " ";
+    width: 100%;
+    height: 3.75rem;
+    right: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(../images/Silueta_montain_azul_conocimiento.svg) no-repeat scroll 50% 0 transparent;
+    background-size: 105% auto;
+    z-index: 3;
+}
+
+.guias {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-guia{
+	align-content: center;
+}

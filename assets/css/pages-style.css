@@ -896,7 +896,7 @@
 
 /* FOOTER DARK */
 .footer-dark #footer {
-	background-color: #29273a;
+	background-color: #003f61;
 }
 
 .footer-dark #footer h1,
@@ -1732,11 +1732,16 @@
 	position: relative;
 	padding: 50px 40px;
 	margin-bottom: 30px;
-	background-color: #00f0d1;
+	background-color: #0082ca;
+    opacity: 0.9;
 	color: #fff;
 	text-align: center;
 	-webkit-transition: all 0.25s;
 	transition: all 0.25s;
+}
+
+.service-box.style-8 p {
+	color: #fff;
 }
 
 .service-box.style-8.large {
