@@ -1739,6 +1739,7 @@
 	padding: 50px 40px;
 	margin-bottom: 30px;
 	background-color: #0082ca;
+	border-radius: 10px;
     opacity: 0.9;
 	color: #fff;
 	text-align: center;
@@ -1753,6 +1754,14 @@
 .service-box.style-8.large {
 	padding-top: 70px;
 	padding-bottom: 120px;
+
+}
+
+.service-box.style-8.large:hover {
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+
 }
 
 .service-box.style-8 > i {
