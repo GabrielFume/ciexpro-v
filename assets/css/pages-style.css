@@ -1239,6 +1239,12 @@
 .about-me h6 {
 	margin-bottom: 0;
 	font-weight: 600;
+	font-size: 22px;
+	margin-top: -10%;
+}
+
+.about-me p {
+	font-size: 17px;
 }
 
 .about-me h6 + span {
