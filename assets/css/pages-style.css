@@ -826,7 +826,7 @@
 	left: 0;
 	background: no-repeat top center;
 	background-size: cover;
-	animation: kenburns 45s infinite;
+	/*animation: kenburns 45s infinite;*/
 }
 
 #page-header .container,
