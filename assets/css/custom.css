@@ -179,6 +179,7 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding-top: 25px;
 	/*order: -1;*/
 	/*width: 50px;*/ /*  width = main-size*/
 	/*height: 50px;*/ /* height = cross-size */
@@ -187,10 +188,12 @@ p {
 
 .item-2{
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: center;
-	margin-left: 10%;
+	padding-top: 2%;
+	/*margin-left: 10%;*/
 	flex-direction: column;
+	padding-bottom: 25px;
 }
 
 
@@ -1047,7 +1050,7 @@ dl {
 }
 
 .text-box.large {
-	padding: 75px 55px;
+	padding: 75px 20px;
 	margin-bottom: 50px;
 	transition: all 0.25s;
 }
@@ -6241,12 +6244,3 @@ blockquote footer img {
     z-index: 3;
 }
 
-.guias {
-  display: flex;
-  flex-direction: row;
-  padding-top: 20px;
-}
-
-.icon-guia{
-	align-content: center;
-}

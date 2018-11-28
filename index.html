@@ -60,74 +60,133 @@
 	
 	<!-- ANIMATIONS -->
 	<link rel="stylesheet" href="assets/plugins/animations/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	
 	<!-- CUSTOM & PAGES STYLE -->
 	<link rel="stylesheet" href="assets/css/custom.css">
 	<link rel="stylesheet" href="assets/css/pages-style.css">
 	<link rel="stylesheet" href="assets/css/para.scss">
+	<link rel="stylesheet" href="assets/css/nuevo.min.css">
 
 </head>
+
+<style>
+	
+</style>
 
 <body class="sticky-header header-transparent footer-dark">
 
 	<div id="main-container">
+
+		<header class="header grid">
+			<!-- LOGOTIPO -->
+			<section class="header-logo">
+				<a href="index.php">
+					<img src="assets/images/logo_ciexpro.png" alt="">
+				</a>
+			</section>
+
+			<!-- MENU -->
+			<section class="header-menu">
+				<a class="waves-effect waves-light " id="btn-modal">
+					<span class="fa fa-bars"></span>
+				</a>
+			</section>
+		</header>
+
+		<!-- MODAL-->
+		<article class="modalwindows" id="modalContain">
+			<!-- CERRAR MODAL -->
+			<section class="modalwindows-end">
+				<a class="waves-effect waves-light " id="btn-closeModal">
+					<span class="fa fa-close"></span>
+				</a>
+			</section>
+
+			<!-- TITULO MODAL -->
+			<section class="modalwindows-title">
+				<h4><strong>Ciexpro,</strong> Te llevamos a la cima</h4>
+				<div class="line"></div>
+			</section>
+
+			<!-- NAV -->
+			<nav>
+				<ul>
+					<!-- HOME -->
+					<li class="active">
+						<a href="index.html">
+							<p>Inicio</p>
+						</a>
+					</li>
+
+					<!-- ABOUT -->
+					<li>
+						<a href="cursos.html">
+							<p>Sobre Nosotros</p>
+						</a>
+					</li>
+
+					<!-- TEAM -->
+					<li>
+						<a href="producto.html">
+							<p>Productos</p>
+						</a>
+					</li>
+
+					<li>
+						<a href="salas.html">
+							<p>Salas</p>
+						</a>
+					</li>
+
+					<li>
+						<a href="ciexpertos.html">
+							<p>Expertos</p>
+						</a>
+					</li>
+
+					<!-- BLOG -->
+					<li>
+						<a href="contact.html">
+							<p>Contacto</p>
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- REDES SOCIALES -->
+			<ul class="footer-social">
+				<!-- FACEBOOK-->
+				<li>
+					<a href="#" target="_blank">
+						<span class="fa fa-facebook"></span>
+					</a>
+				</li>
+
+				<!-- TWITTER-->
+				<li>
+					<a href="#" target="_blank">
+						<span class="fa fa-twitter"></span>
+					</a>
+				</li>
+
+				<!-- INSTAGRAM-->
+				<li>
+					<a href="#" target="_blank">
+						<span class="fa fa-instagram"></span>
+					</a>
+				</li>
+			</ul>
+		</article>
 		
-		<!-- HEADER -->
-		<header id="header">
-			
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-3">
-						
-						<!-- LOGO -->
-						<div id="logo">
-							<a href="index.html">
-								<!-- <img src="assets/images/logo_ciexpro.png" alt=""> -->
-							</a>
-						</div><!-- LOGO -->
-						
-					</div><!-- col -->
-					<div class="col-md-9">
-						
-						<!-- MENU -->
-						<nav>
-
-							<a class="mobile-menu-button" href="#"><i class="decode-icon-menu"></i></a>
-
-							<ul class="menu clearfix" id="menu">
-								<li class="active">
-									<a href="index.html" style="color:black;">Inicio</a>
-									
-								</li>
-								<li class="">
-									<a href="cursos.html" style="color:black;">Catalogo</a>
-									
-								</li>
-								<li class="">
-									<a href="producto.html" style="color:black;">Producto</a>
-									
-								</li>							
-								<li class="">
-									<a class="waves" href="contact.html" style="color:black;">Contacto</a>
-									
-								</li>
-
-							</ul>
-
-						</nav>
-					
-					</div><!-- col -->
-				</div><!-- row -->
-			</div><!-- container-fluid -->
-			
-		</header><!-- HEADER -->
+	
 
 		
 		<section>
 			<div class="">
 				<div class="" data-version="5.0" >
 					<div style="/*filter: brightness(55%);*/">
-						<img src="assets/images/Parallax_Ciexpro_con_texto (1).png" alt="" >
+						<img src="assets/images/Parallax_Ciexpro_sin_logo.png" alt="" >
 					</div>
 				</div><!-- rev_slider -->
 			</div><!-- rev_slider_wrapper -->
@@ -136,9 +195,8 @@
 
 	
 
-			<!-- Button trigger modal -->
-<section class="" style="padding: 0% 0% 8% 0%; /*background: linear-gradient(to top,#0082cb,#fff*/)">
-	
+		<!-- SECTION CIMA-->
+		<section class="cima">
 			<div class="container" id="next-section">
 				<div class="row">
 					<div class="col-md-12">
@@ -146,7 +204,7 @@
 						<div class="headline text-center">
 
 							<!-- <h6>Servicios</h6> -->
-							<h1>LLEGA A LA CIMA<br> <span style="font-weight: 900;">DEL ÉXITO</span></h1>
+							<h1>Llega a la cima<br> <span class="title-strong">del Éxito</span></h1>
 
 						</div><!-- headline -->
 
@@ -154,35 +212,33 @@
 				</div><!-- row -->
 			</div><!-- container -->
 
-			<div class="container" style="margin-top: -30px;">
+			<div class="container">
 				<div class="row">
 					<div class="col-lg-4 col-md-12 col-sm-12">
 
-						<div class="about-me text-box rounded large ">
+						<div class="about-me text-box rounded large m-about">
 
 							<div class="about-me-thumbnail">
 
 								<img src="assets/images/Bootcamp_E-Bootcamp.png" alt="">
 
-								<div class=""> <!-- about-me-hover -->
-									<a class="fancybox" data-fancybox="about" href="../images/about/team/image-5.jpg"></a>
-								</div><!-- about-me-hover -->
-
 							</div><!-- about-me-thumbnail -->
+							
+							<div style="padding: 25px">
+								<h6>eMaster</h6>
+								<!-- <span>Manager</span> -->
 
-							<h6>eMaster</h6>
-							<!-- <span>Manager</span> -->
-
-							<p>Potencia tus habilidades y conviértete en un líder auténtico <br>
-							Tiempo: +4 meses</p>
+								<p>Potencia tus habilidades y conviértete en un líder auténtico <br><br>
+								<i class="fa fa-clock-o"></i>Tiempo: +4 meses</p>
+							</div>
+							
 
 						</div><!-- about-me -->
 
 					</div><!-- col -->
 					<div class="col-lg-4 col-md-12 col-sm-12">
 
-						<div class="about-me text-box rounded large" style="background: linear-gradient(to top,#0082ca,#8a199b);
-    box-shadow: 0 34px 51px 0 rgba(0, 0, 0, 0.39);"> 
+						<div class="about-me text-box rounded large about-me-center" style=""> 
 
 							<div class="about-me-thumbnail">
 
@@ -194,12 +250,16 @@
 
 							</div><!-- about-me-thumbnail -->
 
-							<h6 style="color: #fff">eBootCamp</h6>
-							<!-- <span>Team Leader</span> -->
+							<div style="padding: 25px">
+								<h6 style="color:#fff;">eBootCamp</h6>
+								<!-- <span>Team Leader</span> -->
 
-							<p style="color: #fff">Aprende de manera práctica y rápida los temas actuales <br>
-							Tiempo: de 1 a 4 semanas
-							</p>
+								<p style="color:#fff;">Aprende de manera práctica y rápida los temas actuales <br><br>
+								<i class="fa fa-clock-o"></i>Tiempo: de 1 a 4 semanas
+								</p>
+							</div>
+
+							
 
 						</div><!-- about-me -->
 
@@ -218,19 +278,26 @@
 
 							</div><!-- about-me-thumbnail -->
 
-							<h6>eMicroMaster</h6>
-							<!-- <span>Designer</span> -->
+							
 
-							<p>Especialízate en el área de tu interés y desarrollar tus aptitudes <br>
-							Tiempo: de 1 a 3meses
-							</p>
+							<div style="padding: 25px">
+							
+								<h6>eMicroMaster</h6>
+								<!-- <span>Designer</span> -->
+
+								<p>Especialízate en el área de tu interés y desarrollar tus aptitudes <br><br>
+								<i class="fa fa-clock-o"></i> Tiempo: de 1 a 3meses
+								</p>
+							</div>
+
+							
 
 						</div><!-- about-me -->
 
 					</div><!-- col -->
 				</div><!-- row -->
 				
-				<div style="text-align: center;">
+				<div class="text-center" >
 					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
 					  Inicia la aventura
 					</button>
@@ -243,14 +310,14 @@
 
 		
 
-		<section class="" style="padding: 4% 0% 15% 0%; background-color: #f1f1f1;">
+		<section class="section-habilidades">
 			<div class="container">
 				<div class="container" id="next-section">
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12">
 							<div class="headline text-center">
 								<!-- <h6>Servicios</h6> -->
-								<h1>Desarrolla tus habilidades</h1>
+								<h1>Desarrolla tus <strong>habilidades</strong></h1>
 							</div><!-- headline -->
 						</div><!-- col -->
 					</div><!-- row -->
@@ -261,81 +328,101 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-								<div class="col-lg-12 col-md-12 col-sm-12">
-												<div class="row">
-													<div class="col-md-4 cont" style=" ">
-														<div class="item">
-															<img src="assets/icons/Icono_Comunicaciones-02.png" alt="" width="170" height="170">
-														</div>
-														<div class="item-2">
-															<h4 style="font-size: 20px;"><strong>Comunicaciones</strong></h4>
-															<p style="font-size: 14px;">Domina habilidades comunicacionales basadas en el respeto y la armonía necesaria para transmitir pensamientos, opiniones, trabajar o liderar equipos.</p>
-														</div>
-													</div>
-													<div class="col-md-4 cont" style="  border-left: 2px solid #0074c3;">
-														<div class="item">
-															<img src="assets/icons/Icono_Manejo_computacional-02.png" alt="" width="280" height="280">
-														</div>
-														<div class="item-2">
-															<h4 style="font-size: 20px;"><strong>Pensamiento computacional</strong></h4>
-															<p style="font-size: 14px;">Desarrolla competencias en la era digital para crear nuevas ideas y obtener soluciones originales a los obstáculos que se te presenten.</p>
-														</div>
-													</div>
-													<div class="col-md-4 cont" style=" border-left: 2px solid #0074c3;">
-														<div class="item">
-															<img src="assets/icons/Icono_Liderazgo-02.png" alt="" width="200" height="200">
-														</div>
-														<div class="item-2">
-															<h4 style="font-size: 20px;"><strong>Liderazgo auténtico</strong></h4>
-															<p style="font-size: 14px;">Potencia tus habilidades para liderar equipos de forma integral y alcanzar la cima</p>
-														</div>
-													</div>
-													<div class="col-md-4 cont" style="border-top: 2px solid #0074c3; ">
-														<div class="item">
-															<img src="assets/icons/Icono_Manejo_emocional-02.png" alt="" width="300" height="300">
-														</div>
-														<div class="item-2">
-															<h4 style="font-size: 20px;"><strong>
-																Manejo emocional
-															</strong></h4>
-															<p style="font-size: 14px;">Reconoce tus emociones y las de los demás para aprender a manejarlas y aprovechar su impulso que te lleve a la meta.</p>
-														</div>
-													</div>
-													<div class="col-md-4 cont" style="border-top: 2px solid #0074c3; border-left: 2px solid #0074c3; ">
-														<div class="item">
-															<img src="assets/icons/Icono_Finanzas-02.png" alt="" width="130" height="130">
-														</div>
-														<div class="item-2">
-															<h4 style="font-size: 20px;"><strong>Finanzas Digitales</strong></h4>
-															<p style="font-size: 14px;">Adquiere herramientas para comprender la transformación y la evolución del dinero en la era digital.</p></div>
-													</div>
-													<div class="col-md-4 cont" style="border-top: 2px solid #0074c3; border-left: 2px solid #0074c3;">
-														<div class="item">
-															<img src="assets/icons/Icono_Analisis-02.png" alt="" width="220" height="220">
-														</div>
-														<div class="item-2">
-															<h4 style="font-size: 20px;"><strong>Análisis</strong></h4>
-															<p style="font-size: 14px;">Identifica las características de cualquier situación y extrae información para obtener soluciones acertadas y tomar decisiones.</p>
-														</div>
-													</div>
-												</div>
-											</div><!-- col -->
-
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<div class="row">
+								<div class="col-lg-3 col-md-12 col-sm-12">
+									<div class="item">
+										<img src="assets/icons/Icono_Comunicacion.svg" alt="" width="120">
+									</div>
+									<div class="item-2">
+										<h4 class="text-center" style=""><strong>Comunicaciones</strong></h4>
+										<!-- <p style="font-size: 14px;">Domina habilidades comunicacionales basadas en el respeto y la armonía necesaria para transmitir pensamientos, opiniones, trabajar o liderar equipos.</p> -->
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-12 col-sm-12 border-1">
+									<div class="item">
+										<img src="assets/icons/Icono_Pensamiento computacional-01.svg" alt="" width="120">
+									</div>
+									<div class="item-2">
+										<h4 class="text-center" ><strong>Pensamiento computacional</strong></h4>
+										<!-- <p style="font-size: 14px;">Desarrolla competencias en la era digital para crear nuevas ideas y obtener soluciones originales a los obstáculos que se te presenten.</p> -->
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-12 col-sm-12 border-1">
+									<div class="item">
+										<img src="assets/icons/Icono_Liderazgo-01.svg" alt="" width="120">
+									</div>
+									<div class="item-2">
+										<h4 class="text-center" ><strong>Liderazgo auténtico</strong></h4>
+										<!-- <p style="font-size: 14px;">Potencia tus habilidades para liderar equipos de forma integral y alcanzar la cima</p> -->
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-12 col-sm-12 border-1">
+									<div class="item">
+										<img src="assets/icons/Icono_Marketing-01.svg" alt="" width="120">
+									</div>
+									<div class="item-2">
+										<h4 class="text-center" ><strong>Marketing</strong></h4>
+										<!-- <p style="font-size: 14px;">Potencia tus habilidades para liderar equipos de forma integral y alcanzar la cima</p> -->
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-12 col-sm-12 border-3">
+									<div class="">
+										<div class="item">
+											<img src="assets/icons/Icono_Manejo emocional-01.svg" alt="" width="120">
+										</div>
+										<div class="item-2">
+											<h4 class="text-center" ><strong>Manejo emocional</strong></h4>
+											<!-- <p style="font-size: 14px;">Reconoce tus emociones y las de los demás para aprender a manejarlas y aprovechar su impulso que te lleve a la meta.</p> -->
+										</div>
+									</div>				
+								</div>
+								<div class="col-lg-3 col-md-12 col-sm-12 border-2">
+									<div class="item">
+										<img src="assets/icons/Icono_Finanzas digitales.svg" alt="" width="120">
+									</div>
+									<div class="item-2">
+										<h4 class="text-center" ><strong>Finanzas Digitales</strong></h4>
+										<!-- <p style="font-size: 14px;">Adquiere herramientas para comprender la transformación y la evolución del dinero en la era digital.</p>-->
+									</div> 
+								</div>
+								<div class="col-lg-3 col-md-12 col-sm-12 border-2">
+									<div class="item">
+										<img src="assets/icons/Icono_Analisis-01.svg" alt="" width="120">
+									</div>
+									<div class="item-2">
+										<h4 class="text-center" ><strong>Analisis</strong></h4>
+										<!-- <p style="font-size: 14px;">Adquiere herramientas para comprender la transformación y la evolución del dinero en la era digital.</p> -->
+									</div> 
+								</div>
+								<div class="col-lg-3 col-md-12 col-sm-12 border-2">
+									<div class="">
+										<div class="item">
+											<img src="assets/icons/Icono_Negociacion-01.svg" alt="" width="120">
+										</div>
+										<div class="item-2">
+											<h4 class="text-center" ><strong>Negociación</strong></h4>
+											<!-- <p style="font-size: 14px;">Identifica las características de cualquier situación y extrae información para obtener soluciones acertadas y tomar decisiones.</p> -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- col -->
 					</div><!-- col -->
 				</div><!-- row -->
 			</div><!-- container -->
 
 		</section><!-- container -->
 
-		<section class="" style="background-image: url(assets/images/Fondo_experto.png); background-repeat: no-repeat;" >
-			<div class="container" id="next-section" style="padding-top: 6%;">
+		<section class="cumbre">
+			<div class="container combre-cont" id="next-section">
 				<div class="row">
 					<div class="col-sm-12 col-md-12 col-lg-12">
 
 						<div class="headline text-center">
 
 							<!-- <h6>Servicios</h6> -->
-							<h1>Te guiamos a la cumbre</h1>
+							<h1><strong>Te guiamos</strong> a la cumbre</h1>
 
 						</div><!-- headline -->
 
@@ -349,17 +436,62 @@
 						<div class="owl-carousel services-slider">
 							<div class="item">
 								<div class="service-box style-8 large">
-									<img src="assets/images/Experto_Comunicaciones.png" alt="">
+									<img src="assets/images/Expertos_Ciexpro_Gerardine.png" alt="">
 									<div class="service-box-content guias">
 
-										<div class="icon-guia" style="border-right: 2px solid #fff; padding: 20px;">
-											<i class="decode-icon-coding" style="font-size: 50px"></i>
+										<div class="icon-guia">
+											<i class="decode-icon-coding"></i>
 										</div>
 
-										<div class="" style="padding: 5px;">
-											<p style="font-size: 22px;">Gabriel Arzola</p>
-											<p style="margin-top: -15px;color: #92d400;
-    font-size: 18px;">Especialista en Tecnologia</p>
+										<div class="about-guia">
+											<p>Gerardine González</p>
+											<p >Especialista en Marketing</p>
+										</div>	
+
+									</div><!-- service-box-content -->
+
+								</div><!-- service-box -->
+
+							</div><!-- item -->
+
+							<div class="item">
+
+								<div class="service-box style-8 large">
+
+									<img src="assets/images/Expertos_Ciexpro_Marianela02.png" alt="">
+
+									<div class="service-box-content guias">
+
+										<div class="icon-guia" >
+											<i class="decode-icon-coding"></i>
+										</div>
+
+										<div class="about-guia">
+											<p >Marianela Luzardo</p>
+											<p >Coach</p>
+										</div>	
+
+									</div><!-- service-box-content -->
+
+								</div><!-- service-box -->
+
+							</div><!-- item -->
+
+							<div class="item">
+
+								<div class="service-box style-8 large">
+
+									<img src="assets/images/Expertos_Ciexpro_Luis2.png" alt="">
+
+									<div class="service-box-content guias">
+
+										<div class="icon-guia" >
+											<i class="decode-icon-coding"></i>
+										</div>
+
+										<div class="about-guia">
+											<p >Luis Lamberti </p>
+											<p >Especialista en Marketing </p>
 										</div>	
 
 									</div><!-- service-box-content -->
@@ -376,14 +508,13 @@
 
 									<div class="service-box-content guias">
 
-										<div class="icon-guia" style="border-right: 2px solid #fff; padding: 20px;">
-											<i class="decode-icon-coding" style="font-size: 50px"></i>
+										<div class="icon-guia" >
+											<i class="decode-icon-coding"></i>
 										</div>
 
-										<div class="" style="padding: 5px;">
-											<p style="font-size: 22px;">Gabriel Arzola</p>
-											<p style="margin-top: -15px;color: #92d400;
-    font-size: 18px;">Especialista en Tecnologia</p>
+										<div class="about-guia">
+											<p >Gabriel Arzola</p>
+											<p >Especialista en Tecnologia</p>
 										</div>	
 
 									</div><!-- service-box-content -->
@@ -400,62 +531,13 @@
 
 									<div class="service-box-content guias">
 
-										<div class="icon-guia" style="border-right: 2px solid #fff; padding: 20px;">
-											<i class="decode-icon-coding" style="font-size: 50px"></i>
+										<div class="icon-guia" >
+											<i class="decode-icon-coding"></i>
 										</div>
 
-										<div class="" style="padding: 5px;">
-											<p style="font-size: 22px;">Gabriel Arzola</p>
-											<p style="margin-top: -15px;color: #92d400;
-    font-size: 18px;">Especialista en Tecnologia</p>
-										</div>	
-
-									</div><!-- service-box-content -->
-
-								</div><!-- service-box -->
-
-							</div><!-- item -->
-
-							<div class="item">
-
-								<div class="service-box style-8 large">
-
-									<img src="assets/images/Experto_Mercadeo.png" alt="">
-
-									<div class="service-box-content guias">
-
-										<div class="icon-guia" style="border-right: 2px solid #fff; padding: 20px;">
-											<i class="decode-icon-coding" style="font-size: 50px"></i>
-										</div>
-
-										<div class="" style="padding: 5px;">
-											<p style="font-size: 22px;">Gabriel Arzola</p>
-											<p style="margin-top: -15px;color: #92d400;
-    font-size: 18px;">Especialista en Tecnologia</p>
-										</div>	
-
-									</div><!-- service-box-content -->
-
-								</div><!-- service-box -->
-
-							</div><!-- item -->
-
-							<div class="item">
-
-								<div class="service-box style-8 large">
-
-									<img src="assets/images/Experto_Tecnologia.png" alt="">
-
-									<div class="service-box-content guias">
-
-										<div class="icon-guia" style="border-right: 2px solid #fff; padding: 20px;">
-											<i class="decode-icon-coding" style="font-size: 50px"></i>
-										</div>
-
-										<div class="" style="padding: 5px;">
-											<p style="font-size: 22px;"> Gabriel Arzola</p>
-											<p style="margin-top: -15px;color: #92d400;
-    font-size: 18px;">Especialista en Tecnologia</p>
+										<div class="about-guia">
+											<p> Gabriel Arzola</p>
+											<p>Especialista en Tecnologia</p>
 										</div>	
 
 									</div><!-- service-box-content -->
@@ -471,12 +553,12 @@
 			</div><!-- container -->
 		</section>
 
-		<section class="" style="background-color: #003f61; padding: 8% 0% 4% 0%;">
+		<section class="section-baseconocimiento">
 			<div class="container" >
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12">
 						<div class="headline text-center">
-							<h1 style="color:#fff">Base del conocimiento</h1>
+							<h1>Base del <strong>conocimiento</strong></h1>
 						</div><!-- headline -->
 					</div><!-- col -->
 				</div><!-- row -->
@@ -486,8 +568,8 @@
 				<div class="row">
 					<div class="col-lg-12 ml-auto mr-auto">
 						<div class="row">
-							<div class="col-lg-6 col-md-12 col-sm-12" style="border-right: 3px solid white">
-								<div class="">
+							<div class="col-lg-6 col-md-12 col-sm-12 ">
+								<div class="text-center">
 									<a href="#"><img src="assets/images/Cerebro_Base-del-conocimiento.png" alt="" width="500" height="500"></a>
 								</div><!-- image-box -->
 							</div><!-- col -->
@@ -502,7 +584,7 @@
 											<!-- <h6>Innovative</h6> -->
 											<!-- <h5><a href="#">Titulo 2</a></h5> -->
 
-											<p style="font-size: 18px; color: white;">Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio</p>
+											<p>Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio</p>
 
 											<!-- <a class="waves" href="#"><i class="fa fa-angle-down"></i></a> -->
 
@@ -517,7 +599,7 @@
 											<!-- <h6>Innovative</h6> -->
 											<!-- <h5><a href="#">Titulo 2</a></h5> -->
 
-											<p style="font-size: 18px; color: white;">Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio</p>
+											<p>Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio</p>
 
 											<!-- <a class="waves" href="#"><i class="fa fa-angle-down"></i></a> -->
 										</div><!-- image-box -->
@@ -531,22 +613,7 @@
 													<!-- <h6>Innovative</h6> -->
 													<!-- <h5><a href="#">Titulo 2</a></h5> -->
 
-											<p style="font-size: 18px; color: white;">Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio</p>
-
-											<!-- <a class="waves" href="#"><i class="fa fa-angle-down"></i></a> -->
-
-										</div><!-- image-box -->
-									</div><!-- item -->
-									<div class="item">
-										<div class="">
-											<div class="image-box-thumbnail">
-												<a href="#"><img src="assets/images/Base-del-conocimiento.png" alt=""></a>
-											</div><!-- image-box-thumbnail -->
-
-													<!-- <h6>Innovative</h6> -->
-													<!-- <h5><a href="#">Titulo 2</a></h5> -->
-
-											<p style="font-size: 18px; color: white;">Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio</p>
+											<p>Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio</p>
 
 											<!-- <a class="waves" href="#"><i class="fa fa-angle-down"></i></a> -->
 
@@ -561,7 +628,22 @@
 													<!-- <h6>Innovative</h6> -->
 													<!-- <h5><a href="#">Titulo 2</a></h5> -->
 
-											<p style="font-size: 18px; color: white;">Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio</p>
+											<p>Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio</p>
+
+											<!-- <a class="waves" href="#"><i class="fa fa-angle-down"></i></a> -->
+
+										</div><!-- image-box -->
+									</div><!-- item -->
+									<div class="item">
+										<div class="">
+											<div class="image-box-thumbnail">
+												<a href="#"><img src="assets/images/Base-del-conocimiento.png" alt=""></a>
+											</div><!-- image-box-thumbnail -->
+
+													<!-- <h6>Innovative</h6> -->
+													<!-- <h5><a href="#">Titulo 2</a></h5> -->
+
+											<p>Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio Vestibulum est mattis effi citurut magna. Pellen tesque sit amet tellus blandit. Etiam nec odio</p>
 
 											<!-- <a class="waves" href="#"><i class="fa fa-angle-down"></i></a> -->
 
@@ -573,8 +655,8 @@
 					</div><!-- col -->
 				</div><!-- row -->
 
-				<div class="container">
-					<div style="text-align: center; padding: 4%;">
+				<div class="container ">
+					<div class="text-center btn-blog" style="padding-top: 8%;">
 						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
 						  Ver blog
 						</button>
@@ -583,7 +665,7 @@
 			</div><!-- container -->
 		</section>		
 
-		<section style="padding:8% 0% 0% 0%;">
+		<section class="section-cont">
 			<div class="container">
 
 				<div class="container" id="next-section">
@@ -608,7 +690,7 @@
 
 							<div class="service-box-content">
 
-								<img src="assets/images/Formulario.png" alt="" style="height: 500px; width: 600px;">
+								<img class="img-form" src="assets/images/Formulario.png" alt="contactanos">
 
 								<!-- <h6><a href="single-service.html">Imagen</a></h6>
 
@@ -659,7 +741,7 @@
 													<label for="message">Mensaje</label>
 												</p>
 
-												<div style="text-align: center;">
+												<div class="text-center">
 													<button class="btn btn-default btn-outline waves waves-dark center" id="submit" type="submit" name="submit" value="">Enviar mensaje <i class="decode-icon-cursor"></i></button>
 												</div>
 
@@ -703,7 +785,7 @@
 
 				<div class="container">
 					<div class="row">
-						<div class="col-md-3">
+						<div class="col-lg-3 col-md-12 col-sm-12 text-center">
 
 							<div class="widget widget-text">
 
@@ -736,7 +818,7 @@
 							</div><!-- widget-text -->
 
 						</div><!-- col -->
-						<div class="col-md-2">
+						<div class="col-lg-2 col-md-12 col-sm-12">
 
 							<!-- <div class="widget widget-pages">
 
@@ -755,7 +837,7 @@
 							</div> -->
 
 						</div><!-- col -->
-						<div class="col-md-4">
+						<div class="col-lg-4 col-md-12 col-sm-12 text-center">
 
 							<div class="widget widget-pages">
 
@@ -774,15 +856,15 @@
 							</div>
 
 						</div><!-- col -->
-						<div class="col-md-3">
+						<div class="col-lg-3 col-md-12 col-sm-12 text-center">
 
 							<div class="widget widget-contact">
 
 								<h6 class="widget-title">Informacion de contacto</h6>
 
-								<ul>
+								<ul class="text-center">
 									<li>Av. Eugenio Mendoza con 2da. Transversal, Torre Multinvest, <br class="d-block d-md-none d-lg-block"> Piso 2, Oficina 2C. La Castellana <br>Caracas – Venezuela.</li>
-									<li>+58 212-2645130</li>
+									<li class="text-center">+58 212-2645130</li>
 									<li><a href="mailto:office@milothemes.com">office@milothemes.com</a></li>
 								</ul>
 
@@ -796,6 +878,7 @@
 									<a class="twitter" href="https://twitter.com/ciexpro/"><i class="fa fa-twitter"></i></a>
 									<a class="instagram" href="https://www.instagram.com/ciexpro/"><i class="fa fa-instagram"></i></a>
 									<a class="linkedin" href="https://www.youtube.com/channel/UCoq81aIEknX3aVWqJVmzutw"><i class="fa fa-youtube"></i></a>
+									<a class="linkedin" href="https://ve.linkedin.com/company/ciexpro"><i class="fa fa-linkedin"></i></a>
 
 								</div><!-- social-media -->
 
@@ -978,9 +1061,52 @@
 		<!--End mc_embed_signup-->
 
 	<script>
-		$('#myModal').on('shown.bs.modal', function () {
-  			$('#myInput').trigger('focus')
-		})
+		// $('#myModal').on('shown.bs.modal', function () {
+  // 			$('#myInput').trigger('focus')
+		// })
+	</script>
+
+	<!--SCRIPT PROPIOS-->
+	<script>
+	    $(document).ready(
+	    	function() { 
+
+		        //MODAL
+		        $('.modal').modal();
+
+		        //ACTIVAR-DESACTIVAR MODAL
+		        $('#btn-modal').click(function(){
+					$("#modalContain").addClass('active');
+				})
+
+				$('#btn-closeModal').click(function(){
+					$("#modalContain").removeClass('active');
+				})
+
+				$('.jarallax').jarallax ({
+				    velocidad : 0.2
+				})
+
+				// ROTAR CLASE ACTIVE EN TEAM
+				$('.team-list li').click(function(){
+					$('.team-list li').removeClass('active');
+     				$(this).addClass('active')
+
+				})
+
+				//FORMULARIO HOME
+				$('#btn-next1').click(function(){
+					$("#zoneForm").removeClass('active');
+					$("#zoneMessage").addClass('active');
+				})
+
+				$('#btn-next2').click(function(){
+					$("#zoneMessage").removeClass('active');
+					$("#zoneForm").addClass('active');
+				})
+		        
+	    	}
+	    );
 	</script>
 	
 </body>

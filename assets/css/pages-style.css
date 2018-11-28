@@ -22,7 +22,10 @@
  *	 - BLOG
  *	 - CONTACT
  *	 - SHORTCODES
+ *	+ CIEXPRO
+ *	 - INDEX LLEGA A LA CIMA
  */
+
 
 /***********************************************************************************
  *	+ PAGE WRAPPER
@@ -3003,3 +3006,212 @@
 	}
 
 }
+
+ /***********************************************************************************
+ *	+ INDEX LLEGA A LA CIMA
+ ***********************************************************************************/
+
+.cima{
+	padding: 0% 0% 8% 0%;
+}
+
+.title-strong {
+	font-weight: 900;
+}
+
+.container-cima {
+	margin-top: -30px;
+}
+
+.m-about{
+	padding: 75px 24px
+}
+
+.about-me > p{
+	text-align: justify;
+}
+
+.about-me-center > h6, .about-me-center > p{
+	color: #fff;
+}
+
+.about-me-center{
+	background: linear-gradient(to top,#0082ca,#8a199b);
+    box-shadow: 0 34px 51px 0 rgba(0, 0, 0, 0.39);
+    padding: 75px 24px;
+}
+
+ /***********************************************************************************
+ *	+ DESARROLLA TUS HABILIDADES
+ ***********************************************************************************/
+
+.section-habilidades{
+	padding: 4% 0% 15% 0%;
+	background-color: #f1f1f1;
+}
+
+.item-2 h4{
+	font-size: 20px;
+}
+
+/*.*/
+
+.margin-cen{
+	padding-top: 35px;
+}
+
+@media (min-width: 960px){
+
+	.border-1{
+		border-left: 2px solid #0074c3;
+	}
+
+	.border-2{
+		border-top: 2px solid #0074c3;
+		border-left: 2px solid #0074c3; 
+	}
+
+	.border-3{
+		border-top: 2px solid #0074c3; 
+	}
+
+}
+
+@media (min-width: 720px) and (max-width: 959px) {
+
+	.border-1{
+		border-top: 2px solid #0074c3;
+	}
+
+	.border-2{
+		border-top: 2px solid #0074c3;
+		/*border-left: 2px solid #0074c3; */
+	}
+
+	.border-3{
+		border-top: 2px solid #0074c3; 
+	}
+
+}
+
+@media (min-width: 540px) and (max-width: 719px) {
+
+	.border-1{
+		border-top: 2px solid #0074c3;
+	}
+
+	.border-2{
+		border-top: 2px solid #0074c3;
+		/*border-left: 2px solid #0074c3; */
+	}
+
+	.border-3{
+		border-top: 2px solid #0074c3; 
+	}
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	.border-1{
+		border-top: 2px solid #0074c3;
+	}
+
+	.border-2{
+		border-top: 2px solid #0074c3;
+		/*border-left: 2px solid #0074c3; */
+	}
+
+	.border-3{
+		border-top: 2px solid #0074c3; 
+	}
+
+}
+
+/***********************************************************************************
+ *	+ TE GUIAMOS A LA CUMBRE
+ ***********************************************************************************/
+
+.cumbre{
+	background-image: url(../images/Fondo_experto.png);
+	background-repeat: no-repeat;
+}
+
+.cumbre > .container{
+	padding-top: 6%;
+}
+
+.guias {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+
+.icon-guia{
+	align-content: center;
+	border-right: 2px solid #fff; 
+	padding: 20px;
+}
+
+.icon-guia i{
+	font-size: 50px
+}
+
+.about-guia{
+	padding: 5px;
+}
+
+.about-guia p{
+	font-size: 18px;
+	text-align: left;
+}
+
+.desc-guia{
+	margin-top: -15px;
+	text-align: justify;
+	font-size: 18px;
+}
+
+.btn-blog{
+	padding-top: 50%;
+
+}
+
+/***********************************************************************************
+ *	+ BASE DEL CONOCIMIENTO
+ ***********************************************************************************/
+
+.section-baseconocimiento{
+	background-color: #003f61; padding: 8% 0% 4% 0%;
+}
+
+.section-baseconocimiento h1{
+	color:#fff;
+}
+
+.section-baseconocimiento p{
+	font-size: 18px;
+	color: white;
+}
+
+.cont-img-cerebro{
+	border-right: 3px solid white;
+}
+
+.btn-cen{
+	padding: 4%;
+}
+
+/***********************************************************************************
+ *	+ CONTACTO
+ ***********************************************************************************/
+
+.section-cont{
+	padding:8% 0% 0% 0%;
+}
+
+.img-form{
+	height: 500px; width: 600px;
+}
+
+

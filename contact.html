@@ -53,6 +53,8 @@
 	<!-- CUSTOM & PAGES STYLE -->
 	<link rel="stylesheet" href="assets/css/custom.css">
 	<link rel="stylesheet" href="assets/css/pages-style.css">
+	<!-- <link rel="stylesheet" href="assets/css/para.scss"> -->
+	<link rel="stylesheet" href="assets/css/nuevo.min.css">
 	
 
 </head>
@@ -61,55 +63,94 @@
 
 	<div id="main-container">
 		
-		<!-- HEADER -->
-		<header id="header">
-			
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-3">
-						
-						<!-- LOGO -->
-						<div id="logo">
-							<a href="index.html">
-								<img src="assets/images/logo_ciexpro.png" alt="">
-							</a>
-						</div><!-- LOGO -->
-						
-					</div><!-- col -->
-					<div class="col-md-9">
-						
-						<!-- MENU -->
-						<nav>
+		<header class="header grid">
+			<!-- LOGOTIPO -->
+			<section class="header-logo">
+				<a href="index.php">
+					<img src="assets/images/logo_ciexpro.png" alt="">
+				</a>
+			</section>
 
-							<a class="mobile-menu-button" href="#"><i class="decode-icon-menu"></i></a>
+			<!-- MENU -->
+			<section class="header-menu">
+				<a class="waves-effect waves-light " id="btn-modal">
+					<span class="fa fa-bars"></span>
+				</a>
+			</section>
+		</header>
 
-							<ul class="menu clearfix" id="menu">
-								<li class="">
-									<a href="index.html" style="color: #0082cb;">Inicio</a>
-									
-								</li>
-								<li class="">
-									<a href="cursos.html" style="color: #0082cb;">Catalogo</a>
-									
-								</li>
-								<li class="">
-									<a href="producto.html" style="color: #0082cb;">Producto</a>
-									
-								</li>							
-								<li class="active">
-									<a class="waves" href="contact.html" style="color: #0082cb;">Contacto</a>
-									
-								</li>
+		<!-- MODAL-->
+		<article class="modalwindows" id="modalContain">
+			<!-- CERRAR MODAL -->
+			<section class="modalwindows-end">
+				<a class="waves-effect waves-light " id="btn-closeModal">
+					<span class="fa fa-close"></span>
+				</a>
+			</section>
 
-							</ul>
+			<!-- TITULO MODAL -->
+			<section class="modalwindows-title">
+				<h4><strong>Ciexpro,</strong> Te llevamos a la cima</h4>
+				<div class="line"></div>
+			</section>
 
-						</nav>
-					
-					</div><!-- col -->
-				</div><!-- row -->
-			</div><!-- container-fluid -->
-			
-		</header><!-- HEADER -->
+			<!-- NAV -->
+			<nav>
+				<ul>
+					<!-- HOME -->
+					<li class="active">
+						<a href="index.html">
+							<p>Inicio</p>
+						</a>
+					</li>
+
+					<!-- ABOUT -->
+					<li>
+						<a href="cursos.html">
+							<p>Sobre Nosotros</p>
+						</a>
+					</li>
+
+					<!-- TEAM -->
+					<li>
+						<a href="producto.html">
+							<p>Productos</p>
+						</a>
+					</li>
+
+					<!-- BLOG -->
+					<li>
+						<a href="contact.html">
+							<p>Contacto</p>
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- REDES SOCIALES -->
+			<ul class="footer-social">
+				<!-- FACEBOOK-->
+				<li>
+					<a href="#" target="_blank">
+						<span class="fa fa-facebook"></span>
+					</a>
+				</li>
+
+				<!-- TWITTER-->
+				<li>
+					<a href="#" target="_blank">
+						<span class="fa fa-twitter"></span>
+					</a>
+				</li>
+
+				<!-- INSTAGRAM-->
+				<li>
+					<a href="#" target="_blank">
+						<span class="fa fa-instagram"></span>
+					</a>
+				</li>
+			</ul>
+		</article>
 
 
 		<!-- PAGE CONTENT -->
@@ -354,6 +395,48 @@
 	
 	<!-- CUSTOM JS -->
 	<script src="assets/js/custom.js"></script>
+
+	<script>
+	    $(document).ready(
+	    	function() { 
+
+		        //MODAL
+		        $('.modal').modal();
+
+		        //ACTIVAR-DESACTIVAR MODAL
+		        $('#btn-modal').click(function(){
+					$("#modalContain").addClass('active');
+				})
+
+				$('#btn-closeModal').click(function(){
+					$("#modalContain").removeClass('active');
+				})
+
+				$('.jarallax').jarallax ({
+				    velocidad : 0.2
+				})
+
+				// ROTAR CLASE ACTIVE EN TEAM
+				$('.team-list li').click(function(){
+					$('.team-list li').removeClass('active');
+     				$(this).addClass('active')
+
+				})
+
+				//FORMULARIO HOME
+				$('#btn-next1').click(function(){
+					$("#zoneForm").removeClass('active');
+					$("#zoneMessage").addClass('active');
+				})
+
+				$('#btn-next2').click(function(){
+					$("#zoneMessage").removeClass('active');
+					$("#zoneForm").addClass('active');
+				})
+		        
+	    	}
+	    );
+	</script>
 	
 </body>
 
