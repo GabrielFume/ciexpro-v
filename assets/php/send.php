@@ -1,6 +1,6 @@
 <?php
 	
-	$destination = "name@domain.com"; // email address of destination
+	$destination = "gabrielgac75@gmail.com"; // email address of destination
 	
 	error_reporting (E_ALL ^ E_NOTICE);
 
@@ -25,7 +25,7 @@
 	{
 		$name 	 = stripslashes($_POST['name']);
 		$email 	 = trim($_POST['email']);
-		$subject = trim($_POST['subject']);
+		// $subject = trim($_POST['subject']);
 		$message = stripslashes($_POST['message']);
 	
 		$error = '';
