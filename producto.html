@@ -55,6 +55,8 @@
 	<link rel="stylesheet" href="assets/css/pages-style.css">
 	<link rel="stylesheet" href="assets/css/para.scss">
 	<link rel="stylesheet" href="assets/css/nuevo.min.css">
+
+	<script src="https://www.paypalobjects.com/api/checkout.js"></script>
 	
 
 </head>
@@ -268,6 +270,14 @@
 							
 							<span style="color:#94d60a;"> SIGUE EL MAPA DE LA TRANSFORMACION</span>
 
+							<div class="container" style="padding-top: 5%;">
+
+								<div id="ID-CONTENEDOR-DE-BOTON-PAYPAL">
+							
+								</div>
+
+							</div>
+
 						</div><!-- headline -->
 
 					</div><!-- col -->
@@ -393,6 +403,83 @@
 							</div><!-- service-box -->
 						</div><!-- col -->
 					</div><!-- row -->
+
+
+					<div class="container">
+
+						<div id="ID-CONTENEDOR-DE-BOTON-PAYPAL">
+							
+						</div>
+
+
+						<script>
+							// Render the PayPal button
+								paypal.Button.render({
+									env: 'sandbox', // --- Set your environment (sandbox | production)
+									style: { // Specify the style of the button
+										layout: 'horizontal',  // horizontal | vertical
+										size:   'responsive',    // medium | large | responsive
+										shape:  'pill',      // pill | rect
+										color:  'blue',      // gold | blue | silver | white | black
+										label: 'paypal',
+										tagline: true,
+										fundingicons: false
+									},
+									// Specify allowed and disallowed funding sources
+									//
+									// Options:
+									// - paypal.FUNDING.CARD
+									// - paypal.FUNDING.CREDIT
+									// - paypal.FUNDING.ELV
+									funding: {
+										allowed: [
+											paypal.FUNDING.CARD,
+											paypal.FUNDING.CREDIT
+										],
+										disallowed: []
+									},
+									// Enable Pay Now checkout flow (optional)
+									commit: true,
+									// PayPal Client IDs - replace with your own
+									// Create a PayPal app: https://developer.paypal.com/developer/applications/create
+									client: {
+										sandbox: 'AeRqAjwvteuVbo-fSw9eDQ41R6EOeJQzBT43avHvOH8LMrG2rAexRLA9sQVnec8mdTCt71eRcvOdonTE'
+									},
+									payment: function (data, actions) {
+										return actions.payment.create({
+											payment: {
+												transactions: [
+													{
+														amount: {
+															total: '25.50',
+															currency: 'USD'
+														}
+													}
+												]
+											}
+										});
+									},
+									onAuthorize: function (data, actions) {
+										return actions.payment.execute()
+											.then(function (result) {
+											
+											var str = JSON.stringify(result, null, 2);
+											var xhttp = new XMLHttpRequest();
+
+											xhttp.onreadystatechange = function () {
+												if (this.readyState == 4 && this.status == 200) {
+													// --- Server response
+												}
+											}
+											
+											// --- Archivo PHP a ejecutar cuando el pago sea exitoso
+											xhttp.open("GET", "pay_details.php?obj=" + str, true);
+											xhttp.send();
+										});
+									}
+								}, '#ID-CONTENEDOR-DE-BOTON-PAYPAL');
+						</script>
+					</div>
 				</div><!-- container -->
 			</section>
 			
