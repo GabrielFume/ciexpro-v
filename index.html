@@ -116,7 +116,7 @@
 					<!-- HOME -->
 					<li class="active">
 						<a href="index.html">
-							<p>Inicio</p>
+							<p class="p">Inicio</p>
 						</a>
 					</li>
 
@@ -130,18 +130,18 @@
 					<!-- TEAM -->
 					<li>
 						<a href="#">
-							<p>Formación</p>
+							<p class="p">Formación</p>
 						</a>
 
 						<ul>
 							<li>
 								<a href="eMaster.html">
-									<p style="font-size: 30px;">eMaster</p>
+									<p class="p">eMaster</p>
 								</a>
 							</li>
 							<li>
 								<a href="producto.html">
-									<p style="font-size: 30px;">eBootCamp</p>
+									<p class="p">eBootCamp</p>
 								</a>
 							</li>
 						</ul>
@@ -149,7 +149,7 @@
 
 					<li>
 						<a href="salas.html">
-							<p>Salas</p>
+							<p class="p">Salas</p>
 						</a>
 					</li>
 
@@ -162,7 +162,7 @@
 					<!-- BLOG -->
 					<li>
 						<a href="contact.html">
-							<p>Contacto</p>
+							<p class="p">Contacto</p>
 						</a>
 					</li>
 				</ul>
@@ -200,7 +200,7 @@
 		</article>
 
 
-				<section class="full-section dark-section parallax" id="section-57" data-stellar-background-ratio="0.1s" style="background-color: black; background-image: url(assets/images/Parallax_Ciexpro_V2.png); padding-top: 50%;">
+				<section class="full-section dark-section parallax" id="section-57" data-stellar-background-ratio="0.1s" style="background-color: black; background-image: url(assets/images/Parallax_Ciexpro_V2.png); padding-top: 50%; margin-top: 8px; ">
 				<div class="full-section-container" style="margin-top: -28%;">
 
 					<div class="container">
@@ -255,57 +255,50 @@
 
 							<div class="about-me-thumbnail">
 
-								<img src="assets/images/Bootcamp_E-Bootcamp.png" alt="">
+								<a href="eMaster.html"><img src="assets/images/Bootcamp_E-Bootcamp.png" alt=""></a>
 							</div>
 							
 							<div>
+								<h6>eMaster</h6>
 
-								
-									<h6>eMaster</h6>
-
-									<div class="hr default-color"></div>
+								<div class="hr default-color"></div>
 							
-								
-
-								<p>Potencia tus habilidades y conviértete en un líder auténtico <br><br>
-								<i class="fa fa-clock-o ico"></i> +4 meses</p>
+								<a href="eMaster.html"><p>Potencia tus habilidades y conviértete en un líder auténtico <br><br>
+								<i class="fa fa-clock-o ico"></i> +4 meses</p></a>
 							</div>
 							
 
 						</div>
 
 					</div>
+
+					
 					<div class="col-lg-1"></div>
+
 					<div class="col-lg-4 col-md-12 col-sm-12">
 
-						<div class="about-me text-box rounded large " style="background-color:#f4f8f9;"> <!-- about-me-center -->
-							<a href="producto.html">
+						<div class="about-me text-box rounded large m-about">
+
 							<div class="about-me-thumbnail">
-								
-								<img src="assets/images/Bootcamp_E-Master.png" alt="">
 
-								<div class=""> <!-- about-me-hover -->
-									<a class="fancybox" data-fancybox="about" href="../images/about/team/image-6.jpg"></a>
-								</div><!-- about-me-hover -->
-
-							</div><!-- about-me-thumbnail -->
-
+								<a href="producto.html"><img src="assets/images/Bootcamp_E-Master.png" alt=""></a>
+							</div>
+							
 							<div>
-								<h6 >eBootCamp</h6>
+								<h6>eBootCamp</h6>
 								<div class="hr default-color"></div>
 								<!-- <span>Team Leader</span> -->
 
-								<p >Aprende de manera práctica y rápida los temas actuales <br><br>
+								<a href="producto.html"><p >Aprende de manera práctica y rápida los temas actuales <br><br>
 								<i class="fa fa-clock-o ico"></i> De 1 a 4 semanas
-								</p>
+								</p></a>
 							</div>
-							</a>
-
 							
 
-						</div><!-- about-me -->
+						</div>
 
-					</div><!-- col -->
+					</div>
+	
 					<!-- <div class="col-lg-6 col-md-12 col-sm-12" >
 
 						<div class="about-me text-box rounded large ">
@@ -371,80 +364,88 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="col-lg-12 col-md-12 col-sm-12">
-							<div class="row">
-								<div class="col-lg-3 col-md-12 col-sm-12">
-									<div class="item">
+							<div class="row" >
+								<div class="col-lg-3 col-md-12 col-sm-12 card-habi" id="habilidades" style="">
+									<div class="item" id="icono1">
 										<img src="assets/icons/Icono_Comunicacion.svg" alt="" width="120">
 									</div>
 									<div class="item-2">
-										<h4 class="text-center" style=""><strong>Comunicaciones</strong></h4>
-										<!-- <p style="font-size: 14px;">Domina habilidades comunicacionales basadas en el respeto y la armonía necesaria para transmitir pensamientos, opiniones, trabajar o liderar equipos.</p> -->
+										<h4 class="text-center" id="icono1"><strong>Comunicaciones</strong></h4>
+
+										<!-- TEXT ADICIONAL -->
+										<div id="mostrar1">
+											<p style="font-size: 14px;">Domina habilidades comunicacionales basadas en el respeto y la armonía necesaria para transmitir pensamientos, opiniones, trabajar o liderar equipos.</p>
+										</div>
+										
 									</div>
+
+									
 								</div>
-								<div class="col-lg-3 col-md-12 col-sm-12 border-1">
-									<div class="item">
+								<div class="col-lg-3 col-md-12 col-sm-12 border-1" id="habilidades2">
+									<div class="item" id="icono2">
 										<img src="assets/icons/Icono_Pensamiento computacional-01.svg" alt="" width="120">
 									</div>
 									<div class="item-2">
-										<h4 class="text-center" ><strong>Pensamiento computacional</strong></h4>
-										<!-- <p style="font-size: 14px;">Desarrolla competencias en la era digital para crear nuevas ideas y obtener soluciones originales a los obstáculos que se te presenten.</p> -->
+										<h4 class="text-center" id="icono2"><strong>Pensamiento computacional</strong></h4>
+										
+										<p style="font-size: 14px;" id="mostrar2">Desarrolla competencias en la era digital para crear nuevas ideas y obtener soluciones originales a los obstáculos que se te presenten.</p>
 									</div>
 								</div>
-								<div class="col-lg-3 col-md-12 col-sm-12 border-1">
-									<div class="item">
+								<div class="col-lg-3 col-md-12 col-sm-12 border-1" id="habilidades3">
+									<div class="item" id="icono3">
 										<img src="assets/icons/Icono_Liderazgo-01.svg" alt="" width="120">
 									</div>
 									<div class="item-2">
-										<h4 class="text-center" ><strong>Liderazgo auténtico</strong></h4>
-										<!-- <p style="font-size: 14px;">Potencia tus habilidades para liderar equipos de forma integral y alcanzar la cima</p> -->
+										<h4 class="text-center" id="icono3" ><strong>Liderazgo auténtico</strong></h4>
+										<p style="font-size: 14px;" id="mostrar3">Potencia tus habilidades para liderar equipos de forma integral y alcanzar la cima</p>
 									</div>
 								</div>
-								<div class="col-lg-3 col-md-12 col-sm-12 border-1">
-									<div class="item">
+								<div class="col-lg-3 col-md-12 col-sm-12 border-1" id="habilidades4">
+									<div class="item" id="icono4">
 										<img src="assets/icons/Icono_Marketing-01.svg" alt="" width="120">
 									</div>
 									<div class="item-2">
-										<h4 class="text-center" ><strong>Marketing</strong></h4>
-										<!-- <p style="font-size: 14px;">Potencia tus habilidades para liderar equipos de forma integral y alcanzar la cima</p> -->
+										<h4 class="text-center" id="icono4" ><strong>Marketing</strong></h4>
+										<p style="font-size: 14px;" id="mostrar4">Potencia tus habilidades para liderar equipos de forma integral y alcanzar la cima</p>
 									</div>
 								</div>
-								<div class="col-lg-3 col-md-12 col-sm-12 border-3">
+								<div class="col-lg-3 col-md-12 col-sm-12 border-3" id="habilidades5">
 									<div class="">
-										<div class="item">
+										<div class="item" id="icono5">
 											<img src="assets/icons/Icono_Manejo emocional-01.svg" alt="" width="120">
 										</div>
 										<div class="item-2">
-											<h4 class="text-center" ><strong>Manejo emocional</strong></h4>
-											<!-- <p style="font-size: 14px;">Reconoce tus emociones y las de los demás para aprender a manejarlas y aprovechar su impulso que te lleve a la meta.</p> -->
+											<h4 class="text-center" id="icono5" ><strong>Manejo emocional</strong></h4>
+											<p style="font-size: 14px;" id="mostrar5">Reconoce tus emociones y las de los demás para aprender a manejarlas y aprovechar su impulso que te lleve a la meta.</p>
 										</div>
 									</div>				
 								</div>
-								<div class="col-lg-3 col-md-12 col-sm-12 border-2">
-									<div class="item">
+								<div class="col-lg-3 col-md-12 col-sm-12 border-2" id="habilidades6">
+									<div class="item" id="icono6">
 										<img src="assets/icons/Icono_Finanzas digitales.svg" alt="" width="120">
 									</div>
 									<div class="item-2">
-										<h4 class="text-center" ><strong>Finanzas Digitales</strong></h4>
-										<!-- <p style="font-size: 14px;">Adquiere herramientas para comprender la transformación y la evolución del dinero en la era digital.</p>-->
+										<h4 class="text-center" id="icono6" ><strong>Finanzas Digitales</strong></h4>
+										 <p style="font-size: 14px;" id="mostrar6">Adquiere herramientas para comprender la transformación y la evolución del dinero en la era digital.</p>
 									</div> 
 								</div>
-								<div class="col-lg-3 col-md-12 col-sm-12 border-2">
-									<div class="item">
+								<div class="col-lg-3 col-md-12 col-sm-12 border-2" id="habilidades7">
+									<div class="item" id="icono7">
 										<img src="assets/icons/Icono_Analisis-01.svg" alt="" width="120">
 									</div>
 									<div class="item-2">
-										<h4 class="text-center" ><strong>Análisis</strong></h4>
-										<!-- <p style="font-size: 14px;">Adquiere herramientas para comprender la transformación y la evolución del dinero en la era digital.</p> -->
+										<h4 class="text-center" id="icono7" ><strong>Análisis</strong></h4>
+										<p style="font-size: 14px;" id="mostrar7">Adquiere herramientas para comprender la transformación y la evolución del dinero en la era digital.</p>
 									</div> 
 								</div>
-								<div class="col-lg-3 col-md-12 col-sm-12 border-2">
+								<div class="col-lg-3 col-md-12 col-sm-12 border-2" id="habilidades8">
 									<div class="">
-										<div class="item">
+										<div class="item" id="icono8">
 											<img src="assets/icons/Icono_Negociacion-01.svg" alt="" width="120">
 										</div>
 										<div class="item-2">
-											<h4 class="text-center" ><strong>Negociación</strong></h4>
-											<!-- <p style="font-size: 14px;">Identifica las características de cualquier situación y extrae información para obtener soluciones acertadas y tomar decisiones.</p> -->
+											<h4 class="text-center" id="icono8" ><strong>Negociación</strong></h4>
+											<p style="font-size: 14px;" id="mostrar8">Identifica las características de cualquier situación y extrae información para obtener soluciones acertadas y tomar decisiones.</p>
 										</div>
 									</div>
 								</div>
@@ -486,7 +487,7 @@
 										</div>
 
 										<div class="about-guia">
-											<p>Gerardine González</p>
+											<p class="name">Gerardine González</p>
 											<p >Especialista en Marketing</p>
 										</div>	
 
@@ -505,11 +506,11 @@
 									<div class="service-box-content guias">
 
 										<div class="icon-guia" >
-											<img src="assets/icons/blancos/ICONOsMesa de trabajo 2.png" alt="" style="width: 120px;">
+											<img src="assets/icons/blancos/ICONOsMesa de trabajo 2.png" alt="" style="width: 100px;">
 										</div>
 
 										<div class="about-guia">
-											<p >Marianela Luzardo</p>
+											<p class="name">Marianela Luzardo</p>
 											<p >CEO Ciexpro - Coach</p>
 										</div>	
 
@@ -532,7 +533,7 @@
 										</div>
 
 										<div class="about-guia">
-											<p >Luis Lamberti </p>
+											<p class="name">Luis Lamberti </p>
 											<p >Especialista en Marketing </p>
 										</div>	
 
@@ -551,11 +552,11 @@
 									<div class="service-box-content guias">
 
 										<div class="icon-guia" >
-											<img src="assets/icons/blancos/ico-comunicaciones.png" alt="" style="width: 120px;">
+											<img src="assets/icons/blancos/ico-comunicaciones.png" alt="" style="width: 140px;">
 										</div>
 
 										<div class="about-guia">
-											<p >Assaf Yamin</p>
+											<p class="name">Assaf Yamin</p>
 											<p >Especialista en Tecnología Educativa</p>
 										</div>	
 
@@ -578,7 +579,7 @@
 										</div>
 
 										<div class="about-guia">
-											<p>Carlos Subero</p>
+											<p class="name">Carlos Subero</p>
 											<p>Especialista en Psicoterapia</p>
 										</div>	
 
@@ -597,11 +598,11 @@
 									<div class="service-box-content guias">
 
 										<div class="icon-guia" >
-											<img src="assets/icons/blancos/ICONOsMesa de trabajo 6.png" alt="" style="width: 120px;">
+											<img src="assets/icons/blancos/ICONOsMesa de trabajo 6.png" alt="" style="width: 90px;">
 										</div>
 
 										<div class="about-guia">
-											<p>Mayling Berrotera</p>
+											<p class="name">Mayling Berrotera</p>
 											<p>Diseñadora Instruccional</p>
 										</div>	
 
@@ -624,7 +625,7 @@
 										</div>
 
 										<div class="about-guia">
-											<p>Astrid Loyo</p>
+											<p class="name">Astrid Loyo</p>
 											<p>Especialista en Desarrollo Humano</p>
 										</div>	
 
@@ -666,24 +667,55 @@
 						<div class="row">
 							<div class="col-md-10 ml-md-auto mr-md-auto">
 
+							</div><!-- col -->
+
+							<div class="owl-carousel testimonials-slider style-3">
+							<div class="item">
+
 								<div class="testimonial style-2">
 
 									<blockquote>
-										<p style="color:#fff;">“Ciexpro me permitió aclarar y sentar las bases sobre mi idea de negocio. Saber que un equipo te acompaña, te guía y te hace más fácil el desarrollo de los primeros pasos de cada proyecto”</p>
-									</blockquote>
+												<p style="color:#fff;">“Ciexpro me permitió aclarar y sentar las bases sobre mi idea de negocio. Saber que un equipo te acompaña, te guía y te hace más fácil el desarrollo de los primeros pasos de cada proyecto”</p>
+											</blockquote>
 
-									<div class="testimonial-author">
+											<div class="testimonial-author">
 
-										<img src="assets/images/Sthefanie.jpeg" alt="" width="100">
+												<div>
+													<img src="assets/images/Sthefanie.jpeg" alt="" width="100" style="width: 200px; height: 200px;">
+												</div>
 
-										<h3>Sthefanie Balcázar</h3>
-										<p style="color:#743d9c; font-size: 16px; font-weight: bold;">Lic. en Comunicación Social y Especialista en Derecho y Política Internacional</p>
+												<h3>Sthefanie Balcázar</h3>
+												<span class="desc-testimonial">Lic. en Comunicación Social y <br> Especialista en Derecho y Política Internacional</span>
 
-									</div><!-- testimonial-author -->
+											</div>
 
 								</div><!-- testimonial -->
 
-							</div><!-- col -->
+							</div><!-- item -->
+							<div class="item">
+
+								<div class="testimonial style-2">
+
+									<blockquote>
+												<p style="color:#fff;">Mi experiencia con Ebootcamp fue muy gratificante y productiva para mi desarrollo profesional y el de mi organización. Buen contenido, buenos ejercicios y muy divertido de realizar.</p>
+											</blockquote>
+
+											<div class="testimonial-author">
+												
+												<div>
+													<img src="assets/images/Nelson.jpeg" alt="" width="100" style="width: 200px; height: 200px;">
+												</div>
+												
+
+												<h3>Nelson Bravo González</h3>
+												<span class="desc-testimonial">Licenciado en Comunicación Social mención Corporativa.<br> Director de Marquetry Art. Laminados fotográficos en Acrílico.</span>
+
+											</div>
+
+								</div><!-- testimonial -->
+
+							</div><!-- item -->
+						</div><!-- testimonials-slider -->
 						</div><!-- row -->
 					</div><!-- container -->
 
@@ -769,7 +801,8 @@
 												</p>
 
 												<div class="text-center">
-													<button class="btn btn-default btn-outline waves waves-dark center" id="submit" type="submit" name="submit" value="">Enviar mensaje <i class="decode-icon-cursor"></i></button>
+													<button class="btn btn-primary" id="submit" type="submit" name="submit" value="">Enviar mensaje <i class="decode-icon-cursor"></i></button>
+													<!-- btn btn-default btn-outline waves waves-dark center -->
 												</div>
 
 												
@@ -819,7 +852,7 @@
 
 									<p><img src="assets/images/01_AF_LOGOTIPO_CIEXPRO_Blanco.png" alt=""></p>
 									<br>
-									<form id="contact-form" name="contact-form" method="post" action="assets/php/send.php">
+									<!-- <form id="contact-form" name="contact-form" method="post" action="assets/php/send.php">
 											<fieldset>
 
 												<div id="alert-area"></div>
@@ -831,13 +864,15 @@
 												</p>
 
 												<div style="text-align: center;">
-													<button class="btn btn-default btn-outline waves waves-dark center" id="submit" type="submit" name="submit" value="">Enviar mensaje <i class="decode-icon-cursor"></i></button>
+													<button class="btn btn-primary center" id="submit" type="submit" name="submit" value="">Enviar mensaje <i class="decode-icon-cursor"></i></button>
+
+													btn btn-default btn-outline waves waves-dark
 												</div>
 
 												
 
 											</fieldset>
-										</form>
+										</form> -->
 
 								</div>
 
@@ -846,21 +881,17 @@
 						</div><!-- col -->
 						<div class="col-lg-2 col-md-12 col-sm-12">
 
-							<!-- <div class="widget widget-pages">
+							<div class="widget widget-pages">
 
-								<h6 class="widget-title">Fast links</h6>
+								<h6 class="widget-title"></h6>
 
 								<ul>
-									<li><a href="#">Inicio</a></li>
-									<li><a href="#">Productos</a></li>
-									<li><a href="#">Blog &amp; Features</a></li>
-									<li><a href="#">Accordions &amp; Tabs</a></li>
-									<li><a href="#">Skills</a></li>
-									<li><a href="#">Blog</a></li>
-									<li><a href="#">Contacto</a></li>
+									<li ><a href="index.html" style="color:#fff;">Inicio</a></li>
+									<li><a href="producto.html" style="color:#fff;">eBootcamp</a></li>
+									<li><a href="eMaster.html" style="color:#fff;">eMaster</a></li>
 								</ul>
 
-							</div> -->
+							</div>
 
 						</div><!-- col -->
 						<div class="col-lg-4 col-md-12 col-sm-12 text-center">
@@ -870,14 +901,12 @@
 								<h6 class="widget-title" style="color:#fff;">Mapa</h6>
 
 								<ul>
-									<li ><a href="index.html" style="color:#fff;">Inicio</a></li>
-									<li><a href="producto.html" style="color:#fff;">eBootcamp</a></li>
-									<li><a href="eMaster.html" style="color:#fff;">eMaster</a></li>
+									
 									<li><a href="salas.html" style="color:#fff;">Salas</a></li>
 									<li><a href="ciexpertos.html" style="color:#fff;">Expertos</a></li>
 									<li><a href="contact.html" style="color:#fff;">Contacto</a></li>
-									<!-- <li><a href="#" style="color:#fff;">Blog</a></li>
-									<li><a href="#" style="color:#fff;">Contacto</a></li> -->
+									<!-- <li><a href="#" style="color:#fff;">Blog</a></li> -->
+									<!-- <li><a href="#" style="color:#fff;">Contacto</a></li> -->
 								</ul>
 
 							</div>
@@ -888,11 +917,11 @@
 
 							<div class="widget widget-contact">
 
-								<h6 class="widget-title" style="color:#fff;">Informacion de contacto</h6>
+								<!-- <h6 class="widget-title" style="color:#fff;">Informacion de contacto</h6> -->
 
-								<ul class="text-center">
+								<ul class="text-left">
 									<li style="color:#fff;">Av. Eugenio Mendoza con 2da. Transversal, Torre Multinvest, <br class="d-block d-md-none d-lg-block"> Piso 2, Oficina 2C. La Castellana <br>Caracas – Venezuela.</li>
-									<li class="text-center" style="color:#fff;">+58 212-2645130</li>
+									<li class="text-left" style="color:#fff;">+58 212-2645130</li>
 									<li><a href="mailto:office@milothemes.com" style="color:#fff;">ciexpro@ciexpro.com</a></li>
 								</ul>
 
@@ -926,7 +955,7 @@
 		<!-- Modal -->
 		<div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
 		  <div class="modal-dialog modal-dialog-centered modal-lg" role="document" style="max-width: 800px; margin: 8% auto;">
-		    <div class="modal-content" style="background-image: url(assets/images/Fondo_ciexpro_mesa_3.jpg); background-size: cover;">
+		    <div class="modal-content" > <!-- style="background-image: url(assets/images/Fondo_ciexpro_mesa_3.jpg); background-size: cover;" -->
 		      <div class="modal-body" style="padding: 0px;">
 
 		      	<div class="row">
@@ -1112,11 +1141,11 @@
 		        //ACTIVAR-DESACTIVAR MODAL
 		        $('#btn-modal').click(function(){
 					$("#modalContain").addClass('active');
-				})
+				});
 
 				$('#btn-closeModal').click(function(){
 					$("#modalContain").removeClass('active');
-				})
+				});
 
 				// $('.jarallax').jarallax ({
 				//     velocidad : 0.2
@@ -1127,21 +1156,164 @@
 					$('.team-list li').removeClass('active');
      				$(this).addClass('active')
 
-				})
+				});
 
 				//FORMULARIO HOME
 				$('#btn-next1').click(function(){
 					$("#zoneForm").removeClass('active');
 					$("#zoneMessage").addClass('active');
-				})
+				});
 
 				$('#btn-next2').click(function(){
 					$("#zoneMessage").removeClass('active');
 					$("#zoneForm").addClass('active');
-				})
+				});
+
+				// HABILIDADES 1
+
+				$('#mostrar1').hide();
+
+				$('#habilidades').hover(function(){
+                    $("#habilidades").removeClass( "actives" );
+                    $("#habilidades").addClass( "actives" );
+                    $('#mostrar1').show();
+                    $('#icono1').hide();
+
+                });
+
+                $('#habilidades').mouseleave(function(){
+                     $("#habilidades").removeClass( "actives" );
+                     $('#mostrar1').hide();
+                     $('#icono1').show();
+                });
+
+
+                // HABILIDADES 2
+
+                 $('#mostrar2').hide();
+
+                $('#habilidades2').hover(function(){
+                    $("#habilidades2").removeClass( "actives" );
+                    $("#habilidades2").addClass( "actives" );
+                    $('#mostrar2').show();
+                    $('#icono2').hide();
+                });
+
+                $('#habilidades2').mouseleave(function(){
+                     $("#habilidades2").removeClass( "actives" );
+                     $('#mostrar2').hide();
+                     $('#icono2').show();
+                });
+
+                 // HABILIDADES 3
+
+                 $('#mostrar3').hide();
+
+                $('#habilidades3').hover(function(){
+                    $("#habilidades3").removeClass( "actives" );
+                    $("#habilidades3").addClass( "actives" );
+                    $('#mostrar3').show();
+                    $('#icono3').hide();
+                });
+
+                $('#habilidades3').mouseleave(function(){
+                     $("#habilidades3").removeClass( "actives" );
+                     $('#mostrar3').hide();
+                     $('#icono3').show();
+                });
+
+
+                 // HABILIDADES 4
+
+                 $('#mostrar4').hide();
+
+                $('#habilidades4').hover(function(){
+                    $("#habilidades4").removeClass( "actives" );
+                    $("#habilidades4").addClass( "actives" );
+                    $('#mostrar4').show();
+                    $('#icono4').hide();
+                });
+
+                $('#habilidades4').mouseleave(function(){
+                     $("#habilidades4").removeClass( "actives" );
+                     $('#mostrar4').hide();
+                     $('#icono4').show();
+                });
+
+                 // HABILIDADES 5
+
+                 $('#mostrar5').hide();
+
+                $('#habilidades5').hover(function(){
+                    $("#habilidades5").removeClass( "actives" );
+                    $("#habilidades5").addClass( "actives" );
+                    $('#mostrar5').show();
+                    $('#icono5').hide();
+                });
+
+                $('#habilidades5').mouseleave(function(){
+                     $("#habilidades5").removeClass( "actives" );
+                     $('#mostrar5').hide();
+                     $('#icono5').show();
+                });
+
+                 // HABILIDADES 6
+
+                 $('#mostrar6').hide();
+
+                $('#habilidades6').hover(function(){
+                    $("#habilidades6").removeClass( "actives" );
+                    $("#habilidades6").addClass( "actives" );
+                    $('#mostrar6').show();
+                    $('#icono6').hide();
+                });
+
+                $('#habilidades6').mouseleave(function(){
+                     $("#habilidades6").removeClass( "actives" );
+                     $('#mostrar6').hide();
+                     $('#icono6').show();
+                });
+
+                 // HABILIDADES 7
+
+                 $('#mostrar7').hide();
+
+                $('#habilidades7').hover(function(){
+                    $("#habilidades7").removeClass( "actives" );
+                    $("#habilidades7").addClass( "actives" );
+                    $('#mostrar7').show();
+                    $('#icono7').hide();
+                });
+
+                $('#habilidades7').mouseleave(function(){
+                     $("#habilidades7").removeClass( "actives" );
+                     $('#mostrar7').hide();
+                     $('#icono7').show();
+                });
+
+                 // HABILIDADES 8
+
+                 $('#mostrar8').hide();
+
+                $('#habilidades8').hover(function(){
+                    $("#habilidades8").removeClass( "actives" );
+                    $("#habilidades8").addClass( "actives" );
+                    $('#mostrar8').show();
+                    $('#icono8').hide();
+                });
+
+                $('#habilidades8').mouseleave(function(){
+                     $("#habilidades8").removeClass( "actives" );
+                     $('#mostrar8').hide();
+                     $('#icono8').show();
+                });
+
+
+
 		        
 	    	}
 	    );
+
 	</script>
 	
 </body>

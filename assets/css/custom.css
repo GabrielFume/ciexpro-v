@@ -46,7 +46,7 @@
  ***********************************************************************************/
 
 body {
-	font: 15px/28px "Open Sans", sans-serif;
+	font-family: 'Roboto', sans-serif;
 	background-color: #fff;
 	color: #838383;
 }
@@ -260,6 +260,7 @@ address {
 input,
 select,
 textarea {
+	font-family: 'Roboto', sans-serif;
 	position: relative;
 	z-index: 1;
 	display: block;
@@ -383,19 +384,19 @@ input[type="button"]:focus {
 ::-moz-placeholder {
 	color: #aaaaaa;
 	font-size: 14px;
-	font-style: italic;
+	/*font-style: italic;*/
 }
 
 ::-webkit-input-placeholder {
 	color: #aaaaaa;
 	font-size: 14px;
-	font-style: italic;
+	/*font-style: italic;*/
 }
 
 :-ms-input-placeholder {
 	color: #aaaaaa;
 	font-size: 14px;
-	font-style: italic;
+	/*font-style: italic;*/
 }
 
 /* TRANFORMATION CLASSES */
@@ -3117,7 +3118,7 @@ dl {
 .price-plan-header h3 + p {
 	margin-bottom: 30px;
 	font-size: 14px;
-	font-style: italic;
+	/*font-style: italic;*/
 }
 
 .price-plan-header h5 {
@@ -3288,11 +3289,12 @@ blockquote footer img {
 .testimonial.style-2 blockquote {
 	font-size: 18px;
 	line-height: 30px;
-	font-style: italic;
+	/*font-style: italic;*/
+	font-family: 'Roboto', sans-serif;
 }
 
 .testimonial.style-2 blockquote p:first-child:first-letter {
-	font-size: 36px;
+	font-size: 20px;
 }
 
 .testimonial.style-2:hover {
@@ -5449,7 +5451,7 @@ blockquote footer img {
 	top: 10px;
 	left: 0;
 	font-size: 14px;
-	font-style: italic;
+	/*font-style: italic;*/
 	pointer-events:none;
 	-webkit-transition: all 0.25s;
 	transition: all 0.25s;
@@ -5648,7 +5650,7 @@ blockquote footer img {
 	top: 10px;
 	left: 0;
 	font-size: 14px;
-	font-style: italic;
+	/*font-style: italic;*/
 	pointer-events:none;
 	-webkit-transition: all 0.25s;
 	transition: all 0.25s;
